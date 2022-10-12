@@ -1,0 +1,404 @@
+ agoraCallback: {
+   "noticeId": "31aeb35a9245cbd977cfe18b438b75ed",
+   "notifyMs": 1596555306283,
+   "eventType": 40,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 1,
+     "sendts": 1596555306257,
+     "cname": "Testing2",
+     "details": {
+       "status": 0,
+       "msgName": "recorder_started"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ 
+ agoraCallback: {
+   "noticeId": "79568e1c3742dd138e85b8b0e00b50ad",
+   "notifyMs": 1596555306455,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 4,
+     "sendts": 1596555306361,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306360,
+       "streamUid": "101"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ agoraCallback: {
+   "noticeId": "4ab5528241440fcf0c11fda8e9697d81",
+   "notifyMs": 1596555306458,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 6,
+     "sendts": 1596555306363,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306363,
+       "streamUid": "101"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "1553e6f31140e3aa4b01ebb2ba0a0140",
+   "notifyMs": 1596555306652,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 3,
+     "sendts": 1596555306318,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306317,
+       "streamUid": "0"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ agoraCallback: {
+   "noticeId": "ad22fa8e414a127abc8e8888f3d1b846",
+   "notifyMs": 1596555306651,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 2,
+     "sendts": 1596555306307,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306307,
+       "streamUid": "100"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ agoraCallback: {
+   "noticeId": "eaaa1075684847a6b6a88fbf730b0e8f",
+   "notifyMs": 1596555307005,
+   "eventType": 4,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 0,
+     "uid": "1001",
+     "sequence": 8,
+     "sendts": 1596555306840,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "cloud_recording_file_infos",
+       "fileList": "d12fdce9024d37862a8f3a88e387c817_Testing2.m3u8"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "eaaa1075684847a6b6a88fbf730b0e8f",
+   "notifyMs": 1596555307005,
+   "eventType": 4,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 0,
+     "uid": "1001",
+     "sequence": 8,
+     "sendts": 1596555306840,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "cloud_recording_file_infos",
+       "fileList": "d12fdce9024d37862a8f3a88e387c817_Testing2.m3u8"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ agoraCallback: {
+   "noticeId": "b5b990d95145595132302bb8cc966b1c",
+   "notifyMs": 1596555307005,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 7,
+     "sendts": 1596555306374,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306374,
+       "streamUid": "0"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+ agoraCallback: {
+   "noticeId": "c15670eace4436024e0874a6a7695779",
+   "notifyMs": 1596555307023,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 5,
+     "sendts": 1596555306362,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 0,
+       "utcMs": 1596555306362,
+       "streamUid": "100"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "9c5019f1f74a5fa2e9e7d9b48f801e05",
+   "notifyMs": 1596555321625,
+   "eventType": 42,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 9,
+     "sendts": 1596555321528,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_slice_start",
+       "startUtcMs": 1596555306373,
+       "streamUid": "0",
+       "discontinueUtcMs": 1596555306373,
+       "mixedAllUser": true,
+       "trackType": "audio_and_video"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "ce5059909449ce447c6c9c9ef9e5b769",
+   "notifyMs": 1596555326466,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 12,
+     "sendts": 1596555326440,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326437,
+       "streamUid": "100"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "b87b14205c4f0ec2ddfcccab6e7b05f5",
+   "notifyMs": 1596555326447,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 15,
+     "sendts": 1596555326440,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326438,
+       "streamUid": "0"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "dfed42f5254de87550d338a575027156",
+   "notifyMs": 1596555326960,
+   "eventType": 41,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 16,
+     "sendts": 1596555326940,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_leave",
+       "leaveCode": 24
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "f1feee0a104366f53b8f33a2042c2b04",
+   "notifyMs": 1596555326527,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 11,
+     "sendts": 1596555326439,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326437,
+       "streamUid": "101"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "2b991d96cc409306cee87e8e2149f073",
+   "notifyMs": 1596555326529,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 14,
+     "sendts": 1596555326440,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326437,
+       "streamUid": "0"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "43803cecc64c86b97402e89f82f82865",
+   "notifyMs": 1596555326968,
+   "eventType": 44,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 10,
+     "sendts": 1596555326439,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_video_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326437,
+       "streamUid": "101"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "c5f5c2159c48aae209460d8a2ab5ded0",
+   "notifyMs": 1596555327853,
+   "eventType": 11,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 0,
+     "uid": "1001",
+     "sequence": 18,
+     "sendts": 1596555327756,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "session_exit",
+       "exitStatus": 0
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "e9644887504715435bcb38aea833a807",
+   "notifyMs": 1596555327468,
+   "eventType": 43,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 1,
+     "uid": "1001",
+     "sequence": 13,
+     "sendts": 1596555326440,
+     "cname": "Testing2",
+     "details": {
+       "msgName": "recorder_audio_stream_state_changed",
+       "state": 1,
+       "utcMs": 1596555326437,
+       "streamUid": "100"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+ agoraCallback: {
+   "noticeId": "38177fdb8e47784a697001939c3b1b3d",
+   "notifyMs": 1596555327844,
+   "eventType": 31,
+   "sid": "d12fdce9024d37862a8f3a88e387c817",
+   "payload": {
+     "serviceType": 2,
+     "uid": "1001",
+     "sequence": 17,
+     "sendts": 1596555327756,
+     "cname": "Testing2",
+     "details": {
+       "status": 0,
+       "msgName": "uploaded"
+     },
+     "sid": "d12fdce9024d37862a8f3a88e387c817"
+   },
+   "productId": 3
+ }
+
+

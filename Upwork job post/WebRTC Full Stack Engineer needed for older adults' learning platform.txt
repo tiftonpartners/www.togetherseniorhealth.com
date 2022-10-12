@@ -1,0 +1,88 @@
+WebRTC Full Stack Engineer needed for older adults' learning platform
+
+Chrisanne Bradley, Cynthia Benjamin
+RH OpCo 22, dba Together Senior Health
+
+Full Stack Development Posted Aug 24, 2021
+ Only freelancers located in the U.S. may apply.
+
+Interested in using your developer super-powers for good? Help us expand and scale our digital therapy programs to older adults with dementia!
+
+Our challenge is development of a multi-person live-streaming audio-video classroom. If you are an experienced engineer with audio/video conferencing, web, full-stack, and AWS experience, unafraid of working in a start-up, and want to make a positive impact on a group of people with high unmet needs, consider this a great opportunity!
+
+Primary job duties and responsibilities include:
+- Expand our Agora-based MVP to optimize audio and video program delivery across different devices, operating systems and browsers
+- Design and develop real-time video/audio communication and streaming framework necessary to support Together’s live streaming movement classes
+- Design and maintain the interfaces to communicate between the web-based real-time communication clients
+-Build prototypes, analyze performance, and refine architecture that will continuously improve the audio and video quality of a streaming media product
+- Use traditional software engineering and infrastructure deployment approaches to support scalability, reliability, and performance of the streaming architecture.
+
+Qualifications:
+- Experience developing and implementing WebRTC specifications and real-time communication media protocols across multiple browsers and mobile platforms.
+- Experience architecting, building, integrating and deploying streaming media SDKs such as Agora or Twilio.
+- Experience with JavaScript frameworks and technologies under WebRTC -- as interaction with STUN/TURN servers, audio & video codecs, and cross-browser compatibility.
+- Hands-on experience with full stack development including Typescript, JavaScript, NodeJS, Angular2/React, Relational and NoSQL databases, authentication.
+- Understanding of basic application security including authentication, authorization, encryption, and auditing.
+- 5+ Years of experience as a senior software engineer, developing media software or software in a related area.
+- Bachelor's Degree in Computer Science Engineering or related field.
+- Demonstrated excellence in analytical programming and debugging using C, C++, and deploying managed and native plugins within the system architecture.
+- Experience with CI/CD tools such as Gitlab, Jenkins, Service deployment.
+- Knowledge of media codecs, compression techniques, and media containers is highly desired.
+- Excellent team player with strong communication and collaboration skills.
+
+Plus If...
+Experience using testing frameworks and test methodologies.
+Experience using Jira as a tracking tool.
+
+The very best candidate will also have hands-on experience serving seniors, deep sensitivity regarding the unique needs of this audience, and enthusiasm for the potential impact we can have on the lives of people living with memory loss.
+
+Potential for full-time and equity.
+View job posting
+Expert
+Experience Level
+$70.00-$100.00
+Hourly Range
+10-30 hrs /week
+Hourly
+More than 6 months
+Project Length
+Featured Job
+Skills and expertise
+Small (10-99 employees) Amazon Web Services WebRTC Agora.io Agora JavaScript React
+Your proposed terms
+Profile
+Full Stack Development
+Hourly Rate
+Total amount the client will see on your proposal
+$100.00/hr
+
+============
+
+Cover letter
+Hi, I'm a software engineer and React developer with strong experience in developing real-time AUDIO/VIDEO streaming platforms web-based APIs and services such as AGORA 3./4.x, RTMP, Socket.io, HTTP/2.0, ATSC, Twilio, etc.
+
+Quickly, I can review the existing Agora-based MVP, and provide specific and critical suggestions on how to improve your project (MVP) performance and ensure it will be easy to maintain for future revisions.
+
+Let's talk soon.
+Robert
+
+Describe your recent experience with similar projects
+Recently, I built a prototype MVP of a video/audio/chat streaming software for tendom.tv company using React.js, Next.js, Node.js, AGORA 3.0, RTC/RTM SDKs, and firebase.
+
+Describe your approach to testing and improving QA
+Review recent defect hotspots and identify at-risk features or functionality. Implement End-to-end testing using selenium or other testing scripting engines. Slowly ramp up unit testing as new functions are added to ensure that no breaking changes are added.
+
+Create scripts that are linked to checks using husky or another tool that triggers on check-ins. Add GitHub actions (depending on your hosting provider) to run checks on PR creation and periodic checks to ensure production issues are proactively caught.
+
+Along with any testing updates review related documentation and update. For backend APIs use swagger or another live documentation framework that allows linking between API documentation and execution to help with understanding.
+
+A key aspect of ensuring QA's effectiveness is to include the leads in feature discussions so they can understand the new features and have time to plan out test cases. Also, each run of a test should be recorded separately so that upon completion of a testing cycle an evaluation can be completed to understand which area of the code needs more detailed testing and/or support via a post-mortem.
+
+Tools like jest/mocha/storybook/pytest and other testing automation help keep programmers honest and allow QA to focus on critical feature areas ensuring they are able to be effective and make good use of their time.
+
+What frameworks have you worked with?
+React.js, Next.js, Vue, Angular
+Express, Sails, Hapi
+Django, Flask
+Laravel, Symfony
+
