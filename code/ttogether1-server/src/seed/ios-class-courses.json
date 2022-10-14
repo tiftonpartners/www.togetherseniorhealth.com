@@ -1,0 +1,33 @@
+[
+    {
+        "name": "MovingTogether (IOS)",
+        "description": "Moving Together, IOS Testing",
+        "acronym": "MTIOST",
+        "state": "open",
+        "program": "CC",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 14,
+        "capacity": 8,
+        "classes": [
+            {
+                "className": "IOS 1",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 13,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-02-15",
+                "except": [],
+                "instructor": "instr1-iman",
+                "participants": [],
+                "acronym": "IOS1"
+            }
+        ]
+    }
+]

@@ -1,0 +1,383 @@
+@import "src/theme/theme-variables";
+$bar-background-color: #2a272f;
+$bar-text-color: #fff;
+
+$bar-background-color-active: $gray;
+$bar-text-color-active: #201e23;
+
+$z-index-overlay: 999;
+
+@mixin getIcon($iconName) {
+  background-image: url("../../../assets/svg/icon-"+$iconName+".svg");
+}
+
+/* Debug purposes */
+:host ::ng-deep img {
+  width: 100%;
+  min-width: 100%;
+}
+
+/* Debug purposes */
+.session__video {
+  $component: &;
+
+  &-item {
+    position: relative;
+    border-radius: $video-border-radius;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.4));
+  }
+
+  &-container {
+    $container: &;
+
+    border-radius: $video-border-radius $video-border-radius 0 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: $black;
+    position: relative;
+
+    &--hovered {
+      #{$container}__overlay {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+
+    &__video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        video {
+          // width: auto !important;
+          // height: auto !important;
+          top: auto !important;
+          left: auto !important;
+        }
+      }
+
+      &--hidden {
+        display: none;
+      }
+    }
+
+    &__overlay {
+      display: flex;
+      margin: 0 auto;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      z-index: $z-index-overlay;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.25s ease;
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 75%;
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+          flex-direction: row;
+        }
+      }
+
+      .radio-container {
+        background: rgba(221, 221, 221, 0.75);
+        color: #555555;
+        border-radius: 5px;
+        font-size: $xs-font-size;
+        line-height: 18px;
+        padding: 16px;
+        width: 40%;
+
+        .remote-stream-type {
+          display: flex;
+          width: 100%;
+
+          div {
+            width: 50%;
+            text-align: center;
+            border: 1px solid #555555;
+            cursor: pointer;
+          }
+
+          .left {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+          }
+
+          .right {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+          }
+
+          .selected {
+            background: gray;
+            color: white;
+          }
+        }
+      }
+    }
+
+    &__muteoverlay {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #4b4456;
+
+      .icon-camera-overlay-muted {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url("../../../assets/svg/icon-camera-slash-grey.svg") no-repeat;
+        background-size: contain;
+        vertical-align: top;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__stats {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      z-index: $z-index-overlay;
+      opacity: 80%;
+      transition: all 0.25s ease;
+
+      &--text {
+        width: 100%;
+        background-color: black;
+        color: yellow;
+        font-size: 60%;
+        padding: 2px 4px;
+        opacity: 50%;
+        border-radius: 2px;
+      }
+    }
+
+    &__button {
+      background: rgba(221, 221, 221, 0.75);
+      border-color: rgba(150, 150, 150, 0.75);
+      border-radius: 5px;
+      color: #555555;
+      font-size: $xs-font-size;
+      line-height: 18px;
+      padding: 5px;
+      text-align: left;
+
+      &--spotlight::before {
+        @include getIcon("spotlight-purple");
+      }
+
+      &--mute::before {
+        @include getIcon("mic-black");
+      }
+
+      &--unmute::before {
+        @include getIcon("mic-slash-black");
+      }
+
+      &--camera-on::before {
+        @include getIcon("camera-black");
+      }
+
+      &--camera-off::before {
+        @include getIcon("camera-slash-black");
+      }
+
+      &--try-again::before {
+        @include getIcon("reload-black");
+      }
+
+      &::before {
+        width: 20px;
+        height: 20px;
+        content: "";
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin-right: 5px;
+        filter: grayscale(100%) saturate(50%) contrast(50%);
+      }
+
+      span {
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      border: 3px solid transparent;
+      border-radius: $video-border-radius $video-border-radius 0 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: border 0.1s;
+      position: absolute;
+      z-index: 3;
+    }
+  }
+
+  &-item--active &-container {
+    &::after {
+      border-color: $bar-background-color-active;
+    }
+  }
+
+  &-item--hidden {
+    display: none;
+  }
+
+  &-info-bar {
+    display: flex;
+    align-items: center;
+    background-color: $bar-background-color;
+    border-radius: 0 0 $video-border-radius $video-border-radius;
+    color: $bar-text-color;
+    font-family: $font-family-verdana;
+    font-size: 12px;
+    font-weight: 600;
+    overflow: hidden;
+    padding: 8px 10px 8px;
+    user-select: none;
+    transition: background-color 0.1s, color 0.1s;
+
+    .instructor {
+      font-weight: 400;
+      font-size: 10px;
+      margin-left: 4px;
+    }
+
+    .icon-mic-white-slash {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url("../../../assets/svg/icon-mic-white-slash.svg") no-repeat;
+      background-size: contain;
+      vertical-align: top;
+      margin-right: 4px;
+    }
+
+    &__nickname {
+      max-width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: $xs-font-size;
+      line-height: 18px;
+
+      .instructor {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-item--active &-info-bar {
+    background-color: $bar-background-color-active;
+    color: $bar-text-color-active;
+  }
+
+  &-item--no-stream {
+    #{$component}-container {
+      background: #37333a;
+      // url("../../../assets/svg/icon-empty-chair.svg") center center no-repeat;
+    }
+  }
+}
+
+.session__indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.session__indicator {
+  $indicator: &;
+
+  // background: rgba(22, 180, 190, 0.75);
+  border-radius: 10px;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: $z-index-overlay;
+
+  &--icon {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--help {
+    background: rgba(126, 207, 9, 0.4);
+    #{$indicator}--icon {
+      @include getIcon("hand-white");
+    }
+  }
+  &--qos {
+    background: rgba(249, 159, 0, 0.4);
+    #{$indicator}--icon {
+      @include getIcon("internet");
+    }
+  }
+  &--spotlight {
+    background: rgba(22, 180, 190, 0.4);
+    #{$indicator}--icon {
+      @include getIcon("spotlight-white");
+    }
+  }
+}
+
+/* Styles for dynamic elements */
+:host ::ng-deep {
+  .session__video {
+    &-item {
+      &-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  /* stylelint-disable selector-max-compound-selectors */
+  .session__video-item--me .session__video-item-image {
+    transform: scaleX(-1);
+  }
+}

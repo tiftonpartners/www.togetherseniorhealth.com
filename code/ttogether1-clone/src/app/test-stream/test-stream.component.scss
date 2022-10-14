@@ -1,0 +1,36 @@
+@import "src/theme/theme-variables";
+
+$text-primary: $gray-900;
+$bar-background-color: #37313e;
+$bar-text-color: #ece5ee;
+
+.testStream {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 70px 0;
+
+    h1 {
+      color: darkgray;
+      font-weight: bold;
+      font-family: $font-family-verdana;
+      font-size: 30px;
+      text-align: center;
+      width: 50%;
+
+      @include media-breakpoint-up(md) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__select-videos {
+    margin: 10px 0 0;
+
+    select {
+      width: 100%;
+    }
+  }
+}

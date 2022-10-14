@@ -1,0 +1,28 @@
+{
+  "tshUser": {
+    "userInfo": {
+      "userNumber": 0,
+      "userData": null,
+      "permissions": null,
+      "roles": null,
+      "userDataLastSet": 0
+    }
+  },
+  "isTheInstructor": false,
+  "isLocalPreview": false,
+  "isPlaying": false,
+  "isHidden": false,
+  "isSubscribed": false,
+  "isMuted": false,
+  "isAudioMuted": false,
+  "isVideoMuted": false,
+  "isSpeaking": false,
+  "showControls": false,
+  "showIndicators": false,
+  "helpWanted": false,
+  "qos": false,
+  "isFocused": false,
+  "isSpotlight": false,
+  "streamId": "12345",
+  "videoContainerId": "12345"
+}

@@ -1,0 +1,16 @@
+<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line stroke="#00aa00" stroke-linecap="null" stroke-linejoin="null" id="svg_4" y2="19.532914" x2="16.289407" y1="5.795452" x1="16.289407" stroke-width="4" fill="none"/>
+  <line stroke="#00aa00" stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="19.532914" x2="9.523542" y1="5.795452" x1="9.523542" stroke-width="4" fill="none"/>
+  <ellipse ry="2.259315" rx="1.998625" id="svg_8" cy="5.984324" cx="9.541805" stroke-width="0" fill="#00aa00"/>
+  <ellipse ry="2.259315" rx="1.998625" id="svg_9" cy="5.984324" cx="16.291609" stroke-width="0" fill="#00aa00"/>
+  <ellipse ry="2.259315" rx="1.998625" id="svg_10" cy="19.485407" cx="9.541805" stroke-width="0" fill="#00aa00"/>
+  <ellipse ry="2.259315" rx="1.998625" id="svg_11" cy="19.485407" cx="16.300668" stroke-width="0" fill="#00aa00"/>
+ </g>
+</svg>

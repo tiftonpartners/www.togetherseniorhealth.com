@@ -1,0 +1,206 @@
+[
+    {
+        "username": "test7",
+        "user_id": "auth0|5f1766ac965b8c0019fe78d8",
+        "name": "test7@togetherseniorhealth.com",
+        "nickname": "test7"
+    },
+    {
+        "username": "test13",
+        "user_id": "auth0|5f2b029131bed50099045a3a",
+        "name": "test13@togetherseniorhealth.com",
+        "nickname": "test13"
+    },
+    {
+        "username": "instructor1",
+        "user_id": "auth0|5f1f7dd331a1220037f98ecd",
+        "name": "instructor1@togetherseniorhealth.com",
+        "nickname": "instructor1"
+    },
+    {
+        "username": "test6",
+        "user_id": "auth0|5f17667a965b8c0019fe78d2",
+        "name": "test6@togetherseniorhealth.com",
+        "nickname": "test6"
+    },
+    {
+        "username": "test12",
+        "user_id": "auth0|5f17678d2ad32c0013501717",
+        "name": "test12@togetherseniorhealth.com",
+        "nickname": "test12"
+    },
+    {
+        "username": "server2-2",
+        "user_id": "auth0|5f176a76de3b5900192518b9",
+        "name": "server2-2@togetherseniorhealth.com",
+        "nickname": "server2-2"
+    },
+    {
+        "username": "test-rec1",
+        "user_id": "auth0|5f3151827ee0f0003d8cc7f8",
+        "name": "test-rec1@togetherseniorhealth.com",
+        "nickname": "test-rec1"
+    },
+    {
+        "username": "test5",
+        "user_id": "auth0|5f17665e2ad32c00135016f5",
+        "name": "test5@togetherseniorhealth.com",
+        "nickname": "test5"
+    },
+    {
+        "username": "instructor2",
+        "user_id": "auth0|5f298599c13b130228f86544",
+        "name": "instructor2@togetherseniorhealth.com",
+        "nickname": "instructor2"
+    },
+    {
+        "username": "server2-3",
+        "user_id": "auth0|5f176aa92ad32c001350173e",
+        "name": "server2-3@togetherseniorhealth.com",
+        "nickname": "server2-3"
+    },
+    {
+        "username": "instructor3",
+        "user_id": "auth0|5f2aef95257b000038e487f7",
+        "name": "instructor3@togetherseniorhealth.com",
+        "nickname": "instructor3"
+    },
+    {
+        "username": "test16",
+        "user_id": "auth0|5f2b0a685c848f0037c47ca7",
+        "name": "test16@togetherseniorhealth.com",
+        "nickname": "test16"
+    },
+    {
+        "username": "test3",
+        "user_id": "auth0|5f176628dbf6ff00135ca2f1",
+        "name": "test3@togetherseniorhealth.com",
+        "nickname": "test3"
+    },
+    {
+        "username": "test15",
+        "user_id": "auth0|5f2b02e7c13b130228f87bc3",
+        "name": "test15@togetherseniorhealth.com",
+        "nickname": "test15"
+    },
+    {
+        "username": "test9",
+        "user_id": "auth0|5f1766ea7ff60d0019d6856a",
+        "name": "test9@togetherseniorhealth.com",
+        "nickname": "test9"
+    },
+    {
+        "username": "test14",
+        "user_id": "auth0|5f2b02b85c848f0037c47c47",
+        "name": "test14@togetherseniorhealth.com",
+        "nickname": "test14"
+    },
+    {
+        "username": "test-rec2",
+        "user_id": "auth0|5f31519b7ee0f0003d8cc7fa",
+        "name": "test-rec2@togetherseniorhealth.com",
+        "nickname": "test-rec2"
+    },
+    {
+        "username": "server1-4",
+        "user_id": "auth0|5f176988965b8c0019fe7907",
+        "name": "server1-4@togetherseniorhealth.com",
+        "nickname": "server1-4"
+    },
+    {
+        "username": "test-rec4",
+        "user_id": "auth0|5f319f4f7ee0f0003d8ccdf5",
+        "name": "test-rec4@togetherseniorhealth.com",
+        "nickname": "test-rec4"
+    },
+    {
+        "username": "server1-2",
+        "user_id": "auth0|5f176940965b8c0019fe7904",
+        "name": "server1-2@togetherseniorhealth.com",
+        "nickname": "server1-2"
+    },
+    {
+        "username": "server2-4",
+        "user_id": "auth0|5f176abd965b8c0019fe7910",
+        "name": "server2-4@togetherseniorhealth.com",
+        "nickname": "server2-4"
+    },
+    {
+        "username": "test-rec3",
+        "user_id": "auth0|5f319f297ee0f0003d8ccdee",
+        "name": "test-rec3@togetherseniorhealth.com",
+        "nickname": "test-rec3"
+    },
+    {
+        "username": "test1",
+        "user_id": "auth0|5f176555afdb6c00132e7494",
+        "name": "test1@togetherseniorhealth.com",
+        "nickname": "test1"
+    },
+    {
+        "username": "server2-1",
+        "user_id": "auth0|5f176a612ad32c0013501739",
+        "name": "server2-1@togetherseniorhealth.com",
+        "nickname": "server2-1"
+    },
+    {
+        "username": "instructor-rec1",
+        "user_id": "auth0|5f31513e7ee0f0003d8cc7f4",
+        "name": "instructor-rec1@togetherseniorhealth.com",
+        "nickname": "instructor-rec1"
+    },
+    {
+        "username": "test11",
+        "user_id": "auth0|5f176772dbf6ff00135ca328",
+        "name": "test11@togetherseniorhealth.com",
+        "nickname": "test11"
+    },
+    {
+        "username": "test8",
+        "user_id": "auth0|5f1766cb2ad32c0013501700",
+        "name": "test8@togetherseniorhealth.com",
+        "nickname": "test8"
+    },
+    {
+        "username": "server1-1",
+        "user_id": "auth0|5f17691cdbf6ff00135ca337",
+        "name": "server1-1@togetherseniorhealth.com",
+        "nickname": "server1-1"
+    },
+    {
+        "username": "stevet",
+        "user_id": "auth0|5f15a837965b8c0019fe6367",
+        "name": "stevetfidalgo@gmail.com",
+        "nickname": "stevetfidalgo"
+    },
+    {
+        "username": "test4",
+        "user_id": "auth0|5f176640dbf6ff00135ca2f5",
+        "name": "test4@togetherseniorhealth.com",
+        "nickname": "test4"
+    },
+    {
+        "username": "instructor4",
+        "user_id": "auth0|5f2b021a32cea3022114691a",
+        "name": "instructor4@togetherseniorhealth.com",
+        "nickname": "instructor4"
+    },
+    {
+        "username": "server1-3",
+        "user_id": "auth0|5f176959de3b5900192518ab",
+        "name": "server1-3@togetherseniorhealth.com",
+        "nickname": "server1-3"
+    },
+    {
+        "username": "test10",
+        "user_id": "auth0|5f176714de3b590019251893",
+        "name": "test10@togetherseniorhealth.com",
+        "nickname": "test10"
+    },
+    {
+        "username": "test2",
+        "user_id": "auth0|5f1765ea965b8c0019fe78b6",
+        "name": "test2@togetherseniorhealth.com",
+        "nickname": "test2"
+    }
+]

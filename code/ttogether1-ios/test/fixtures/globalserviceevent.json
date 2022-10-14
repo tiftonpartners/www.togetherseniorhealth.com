@@ -1,0 +1,7 @@
+{
+  "eventClass": "Command",
+  "event": "MuteMicAll",
+  "subject": "*",
+  "sessionId": "MTROBOTBOTS4-211206",
+  "target": ""
+}

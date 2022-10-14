@@ -1,0 +1,24 @@
+.card {
+  background: $white;
+  box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  overflow: hidden;
+  border: 0 none;
+
+  &-header,
+  &-content,
+  &-footer {
+    padding: 32px;
+    background-color: transparent;
+  }
+
+  &-footer {
+    .btn {
+      width: 100%;
+    }
+
+    .btn + .btn {
+      margin-top: 1.2rem;
+    }
+  }
+}

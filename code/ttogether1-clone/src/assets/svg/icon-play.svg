@@ -1,0 +1,17 @@
+<svg width="25" height="32" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="27" height="34" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <ellipse fill="#ffdb58" stroke-width="1.5" cx="29.657258" cy="16.869141" id="svg_8" rx="2.3125" ry="2.3125"/>
+  <ellipse fill="#ffdb58" stroke-width="1.5" cx="2.425531" cy="2.369141" id="svg_10" rx="2.3125" ry="2.3125"/>
+  <ellipse fill="#ffdb58" stroke-width="1.5" cx="2.375" cy="29.794672" id="svg_11" rx="2.3125" ry="2.3125"/>
+  <path fill="#ffdb58" stroke="null" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m4.208352,0.787785" id="svg_14"/>
+  <path fill="#ffdb58" stroke="null" stroke-width="1.5" stroke-opacity="null" fill-opacity="null" opacity="0.5" d="m4.208352,0.621118" id="svg_15"/>
+  <ellipse fill="#ffdb58" stroke-width="1.5" cx="22.688289" cy="15.355498" id="svg_1" rx="2.3125" ry="2.3125"/>
+  <path id="svg_2" d="m3.834007,0.40895l20.370136,13.234304l0.101061,3.385548l-20.818595,14.805457l-3.385548,-2.122284l0,-27.640222l3.732946,-1.662804z" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#ffdb58"/>
+ </g>
+</svg>

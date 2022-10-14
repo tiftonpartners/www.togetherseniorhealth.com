@@ -1,0 +1,15 @@
+{
+    "user": {
+        "userId": "",
+        "sid": "h-100550",
+        "pidn": "",
+        "firstName": "testFirstName",
+        "lastName": "testLastName",
+        "screenName": "newtestUserName",
+        "email": "some@some.io",
+        "primaryPhone": "1002003040",
+        "mobilePhone": "1002003040",
+        "courseInterest": "some",
+        "program": "someTestProgram"
+    }
+}

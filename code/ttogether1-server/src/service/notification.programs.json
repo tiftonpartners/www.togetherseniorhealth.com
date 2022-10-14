@@ -1,0 +1,32 @@
+{
+    "Research Study": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    },
+    "Community Class": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    },
+    "Maintenance Class": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    },
+    "Sutter Pilot": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    },
+    "Stanford Pilot": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    },
+    "Other": {
+        "brandLogoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "supportPhoneNumber": "333-333-3333",
+        "coordinatorName": "Jane Doe"
+    }
+}

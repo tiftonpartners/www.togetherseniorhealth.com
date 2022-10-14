@@ -1,0 +1,230 @@
+@import "src/theme/theme-variables";
+
+$block: ".upcommingSessions";
+$todayColor: $blue;
+
+.upcommingSessions {
+  font-size: $default-font-size;
+  font-family: $font-family-verdana;
+
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+
+  .container-fluid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  &__welcome {
+    margin: 0 0 20px;
+    flex-direction: column;
+    align-items: center;
+
+    .welcome {
+      font-size: $h3-font-size;
+    }
+  }
+
+  &__warning {
+    font-size: 1.375rem;
+    font-family: "Amiko", sans-serif;
+    max-width: 50%;
+    margin-bottom: 1em;
+
+    div {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    .btn {
+      max-width: 50%;
+    }
+  }
+
+  h1 {
+    line-height: 100%;
+  }
+
+  .card-header,
+  .card-body,
+  .card-footer {
+    border-bottom: 0 none;
+    border-top: 0 none;
+    padding: 20px;
+  }
+
+  .card-footer {
+    padding-top: 0;
+  }
+
+  .card-header {
+    padding-bottom: 0;
+    padding-top: 47px;
+
+    &__class {
+      width: 100%;
+      border-bottom: 1px solid $line-color;
+      padding-bottom: 24px;
+
+      &-teacher {
+        word-break: break-word;
+        font-size: 1.75rem;
+
+        &-name {
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      &-date {
+        margin-top: 20px;
+        text-transform: capitalize;
+      }
+    }
+
+    &__image {
+      margin-right: 15px;
+
+      img {
+        border: 1px solid #c4c4c4;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 140px;
+        height: 140px;
+      }
+    }
+
+    &__today {
+      display: none;
+    }
+  }
+
+  &__session {
+    margin: 20px 0;
+    padding: 0 22px;
+  }
+
+  &--student {
+    .row {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #{$block}__session {
+      width: 100%;
+    }
+
+    .card {
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 0;
+      overflow: visible;
+
+      &-header {
+        background-color: $white;
+        border-radius: 25px;
+        padding: 32px;
+        box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.4);
+
+        &__class {
+          border: 0 none;
+          padding: 0;
+        }
+
+        &__class-date {
+          font-size: 1.5rem;
+        }
+      }
+
+      &-body {
+        padding: 34px 0 20px;
+
+        &__second-message {
+          font-size: 1.75rem;
+          text-align: center;
+        }
+        &__status {
+          text-align: center;
+          font-weight: bold;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &--instructor {
+    .card-header {
+      &__class {
+        &-date {
+          font-weight: $font-weight-bold;
+          margin-top: 0;
+        }
+      }
+    }
+
+    .card-body {
+      &__status {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.75rem;
+      }
+
+      &__second-message {
+        text-align: center;
+      }
+    }
+
+    #{$block}__session {
+      align-self: flex-start;
+    }
+
+    #{$block}__session--today {
+      .card {
+        border: 7px solid $todayColor;
+        overflow: visible;
+      }
+
+      .card-header {
+        flex-direction: column;
+        position: relative;
+        padding-top: 40px;
+
+        &__today {
+          background-color: $todayColor;
+          color: $white;
+          display: block;
+          font-weight: $font-weight-bold;
+          position: absolute;
+          text-transform: uppercase;
+          left: 24px;
+          top: 0;
+          transform: translateY(-28px);
+          padding: 14px 20px 10px;
+          font-size: $sm-font-size;
+          line-height: 20px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  @include media-breakpoint-up(md) {
+    &--student {
+      #{$block}__session {
+        width: 670px;
+        max-width: 670px;
+        padding: 22px;
+        margin: 0;
+      }
+      #{$block}__session + #{$block}__session {
+        border-top: 2px solid #666;
+        padding-top: 40px;
+      }
+    }
+  }
+}

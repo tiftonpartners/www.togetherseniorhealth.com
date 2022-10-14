@@ -1,0 +1,86 @@
+[
+    {
+        "name": "MovingTogether (BOTS)",
+        "description": "Moving Together, Test Class, Robot Army.  This course is for benchmarking and capacity testing only.",
+        "acronym": "MTROBOT",
+        "state": "open",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 1,
+        "capacity": 8,
+        "program": "TEST",
+        "classes": [
+            {
+                "className": "Robots Class 1",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 6,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-15",
+                "except": [],
+                "instructor": "stomas",
+                "participants": [
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "-BOTS1"
+            },
+            {
+                "className": "Robots Class 2",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 8,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-15",
+                "except": [],
+                "instructor": "lstarovasnik",
+                "participants": [
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "-BOTS2"
+            },
+            {
+                "className": "Robots Class",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 10,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-15",
+                "except": [],
+                "instructor": "cbradley",
+                "participants": [
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "-BOTS3"
+            }
+        ]
+    }
+]

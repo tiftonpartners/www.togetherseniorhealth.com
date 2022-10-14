@@ -1,0 +1,14 @@
+<section class="testStream__container">
+  <h1>{{ nickname }}</h1>
+  <div class="video-container">
+    <video #videoContainer width="320" height="180" controls autoplay loop muted crossOrigin="anonymous">
+      <source src="{{ testVideosPrefix + testVideos[0] }}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="testStream__select-videos">
+      <select name="video-list" class="custom-select" (change)="onVideoChange($event)">
+        <option value="{{ video }}" *ngFor="let video of testVideos">{{ video }}</option>
+      </select>
+    </div>
+  </div>
+</section>

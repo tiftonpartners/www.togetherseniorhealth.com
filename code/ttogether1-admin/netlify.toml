@@ -1,0 +1,17 @@
+[build]
+  command   = "npm run build:prod"
+  functions = "out_functions"
+  publish   = "out_publish"
+
+
+[context.mt1-admin-dev]
+  command   = "npm run build:dev"
+
+[context.mt1-admin-test]
+  command   = "npm run build:test"
+
+[context.mt2-admin-prod]
+  command   = "npm run build:prod2"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

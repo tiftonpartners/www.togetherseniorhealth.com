@@ -1,0 +1,112 @@
+[
+    {
+        "acronym": "RS",
+        "shortName": "Research Study",
+        "longName": "Research Study",
+        "description": "Research Study",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "CC",
+        "shortName": "Community Class",
+        "longName": "Community Class",
+        "description": "Community Class",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "MC",
+        "shortName": "Maintenance Class",
+        "longName": "Maintenance Class",
+        "description": "Maintenance Class",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "SUTP",
+        "shortName": "Sutter Health",
+        "longName": "Sutter Health and the Dolby Brain Health Center",
+        "description": "Sutter Health and the Dolby Brain Health Center",
+        "logoUrl": "http://cdn.mcauto-images-production.sendgrid.net/e14c5aaaff0c159c/c6c45bce-db57-4856-b5b5-9696e2e335f3/4858x1907.png",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "TRHCAP",
+        "shortName": "TR-HCA Pilot",
+        "longName": "TR-HCA Pilot",
+        "description": "TR-HCA Pilot",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "MOTION",
+        "shortName": "MOTION Study",
+        "longName": "MOTION Study",
+        "description": "MOTION Study",
+        "logoUrl": "https://mt1-assets.s3.us-west-2.amazonaws.com/programs/motion_study.png",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "ART",
+        "shortName": "Art Together",
+        "longName": "Art Together",
+        "description": "Art Together",
+        "logoUrl": "https://mt1-assets.s3.us-west-2.amazonaws.com/programs/art_together.png",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "KEY",
+        "shortName": "TheKey Pilot",
+        "longName": "TheKey Pilot",
+        "description": "TheKey Pilot",
+        "logoUrl": "https://mt1-assets.s3.us-west-2.amazonaws.com/programs/thekey_pilot.png",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "VNS",
+        "shortName": "VNS Health Pilot",
+        "longName": "VNS Health Pilot",
+        "description": "VNS Health Pilot",
+        "logoUrl": "https://mt1-assets.s3.us-west-2.amazonaws.com/programs/vns_pilot.png",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "OTHER",
+        "shortName": "Other",
+        "longName": "Other",
+        "description": "Other",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    },
+    {
+        "acronym": "TEST",
+        "shortName": "Test",
+        "longName": "Test",
+        "description": "Test",
+        "logoUrl": "",
+        "coordinatorName": "Coordinator",
+        "coordinatorPhone": "(333)333-3333",
+        "coordinatorEmail": "coordinator1@tsh.care"
+    }
+]

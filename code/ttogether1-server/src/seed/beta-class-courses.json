@@ -1,0 +1,42 @@
+[
+    {
+        "name": "MovingTogether (Beta)",
+        "description": "Moving Together, Community/Beta Class, February 2021",
+        "acronym": "MTBETA",
+        "state": "open",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 14,
+        "capacity": 8,
+        "program": "CC",
+        "classes": [
+            {
+                "className": "Beta 1",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 13,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-02-15",
+                "except": [],
+                "instructor": "jlee",
+                "participants": [
+                    "test1",
+                    "test2",
+                    "test3",
+                    "test4",
+                    "test5",
+                    "test6",
+                    "test7",
+                    "test8"
+                ],
+                "acronym": "BETA1"
+            }
+        ]
+    }
+]

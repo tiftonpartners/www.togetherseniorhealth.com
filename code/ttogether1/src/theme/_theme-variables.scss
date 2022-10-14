@@ -1,0 +1,138 @@
+/*
+ * Application global variables.
+ */
+
+// Set Font Awesome font path
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+
+@import "theme-mixins";
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+// ---------------------------------------------------------------------------
+// Bootstrap variables
+//
+// Override Bootstrap variables here to suite your theme.
+// Copy variables you want to customize from node_modules/bootstrap/scss/_variables.scss
+
+//
+// Color system
+//
+
+// $font-family-amiko: "Amiko", sans-serif;
+$font-family-aribau: "Aribaug";
+$font-family-serif: "Serif";
+$font-family-verdana: "Verdana";
+
+$background: #e5e5e5;
+
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #2a272f;
+
+$silver: #c0c0c0;
+$darkgray: #a9a9a9;
+$gray: #808080;
+$dimgray: #696969;
+
+$body-bg: #e7e3e8;
+
+$black: #000;
+
+$blue: #2d62f7;
+$indigo: #141e75;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #fcc200;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$lavender: #e6e6f7;
+$coral: #e56f66;
+$violet: #a0a0f2;
+$mustard: #ffdb58;
+
+$buttons-primary: #bfe683;
+$together-purple: #451a78;
+$together-purple-light: #ece3f6;
+$header-color: #1572c8;
+
+$together-dark: #314159;
+$together-green: #bfe683;
+$buttons-danger: #ff785a;
+
+$line-color: #2d62f7;
+
+$xs-font-size: 1rem;
+$sm-font-size: 1.25rem;
+$default-font-size: 1.375rem;
+$font-size-base: $sm-font-size;
+
+$headings-margin-bottom: 0;
+$headings-font-family: $font-family-verdana;
+$headings-font-weight: 700;
+
+$h1-font-size: 3.375rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 1.8rem;
+
+$theme-colors: (
+  "primary": $buttons-primary,
+  "purple": $together-purple,
+  "purple-light": $together-purple-light,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $header-color,
+  "warning": $yellow,
+  "danger": $buttons-danger,
+  "white": $white,
+  "light": $gray-100,
+  "dark": $together-dark,
+  "darker": $together-dark,
+  "mid-gray": $gray-400,
+  "dark-gray": $gray-900
+);
+
+$video-unit-desktop-sm: 10px;
+$video-unit-desktop-md: 13px;
+$video-unit-desktop-lg: 19px;
+$video-unit-desktop-xl: 22px;
+// $video-unit-desktop-xxl: 25px;
+$video-width-ratio: 16;
+$video-height-ratio: 9;
+$video-border-radius: 10px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  // xxl: 1400px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  // xxl: 1340px
+);
+
+/* Buttons */
+
+$btn-border-radius: 10px;
+$enable-shadows: 1;

@@ -1,0 +1,67 @@
+[
+    {
+        "name": "MovingTogether (Maintenance)",
+        "description": "Moving Together, Maintenance Class, January 2021",
+        "acronym": "MTMAINT",
+        "state": "open",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 24,
+        "capacity": 8,
+        "program": "MC",
+        "classes": [
+            {
+                "className": "Group 12",
+                "schedule": {
+                    "weekdays": ["mon", "wed"],
+                    "startTime": {
+                        "hour": 11,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-01-11",
+                "except": ["2021-01-18", "2021-02-15"],
+                "instructor": "aklinger",
+                "participants": [
+                    "test1",
+                    "test2",
+                    "test3",
+                    "test4",
+                    "test5",
+                    "test6",
+                    "test7",
+                    "test8"
+                ],
+                "acronym": "-G12"
+            },
+            {
+                "className": "Group 13",
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 11,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-01-12",
+                "skip": [],
+                "instructor": "cstribling",
+                "participants": [
+                    "test1",
+                    "test2",
+                    "test3",
+                    "test4",
+                    "test5",
+                    "test6",
+                    "test7",
+                    "test8"
+                ],
+                "acronym": "-G13"
+            }
+        ]
+    }
+]

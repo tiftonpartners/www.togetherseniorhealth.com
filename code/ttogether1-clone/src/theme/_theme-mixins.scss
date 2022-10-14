@@ -1,0 +1,4 @@
+/* theme-mixins.scss */
+@mixin getIcon($iconName) {
+  background-image: url("~/assets/svg/icon-"+$iconName+".svg");
+}

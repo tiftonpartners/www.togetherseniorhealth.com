@@ -1,0 +1,205 @@
+{
+  "dispatcher": {
+    "eventListeners": {
+      "audioSourceEnded": [null]
+    }
+  },
+  "params": {
+    "streamID": "test20",
+    "audio": true,
+    "video": true,
+    "screen": false
+  },
+  "stream": {},
+  "local": true,
+  "video": true,
+  "audio": true,
+  "screenAudio": false,
+  "screenAttributes": {
+    "width": 1920,
+    "height": 1080,
+    "maxFr": 5,
+    "minFr": 1
+  },
+  "videoSize": [640, 480, 640, 480],
+  "audioLevelHelper": null,
+  "attributes": {
+    "resolution": "640x480",
+    "minFrameRate": 30,
+    "maxFrameRate": 30,
+    "minVideoBW": 100,
+    "maxVideoBW": 750
+  },
+  "inSwitchDevice": false,
+  "userMuteVideo": false,
+  "userMuteAudio": false,
+  "peerMuteVideo": false,
+  "peerMuteAudio": false,
+  "lowStream": null,
+  "videoWidth": 0,
+  "videoHeight": 0,
+  "streamId": "test20",
+  "userId": null,
+  "uintId": null,
+  "mirror": true,
+  "highQuality": false,
+  "stereo": false,
+  "speech": false,
+  "initialized": true,
+  "_streamInitID": "329137601575046",
+  "audioMixing": {
+    "audioContextInited": false,
+    "defaultVolume": 100,
+    "inEarMonitoring": "FILE",
+    "sounds": {
+      "-1": {
+        "soundId": -1,
+        "state": "IDLE",
+        "muted": false,
+        "volume": 100,
+        "startAt": null,
+        "startOffset": null,
+        "pauseAt": null,
+        "pauseOffset": null,
+        "resumeAt": null,
+        "resumeOffset": null,
+        "stopAt": null,
+        "options": null,
+        "source": null
+      }
+    },
+    "states": {
+      "IDLE": "IDLE",
+      "STARTING": "STARTING",
+      "BUSY": "BUSY",
+      "PAUSED": "PAUSED"
+    },
+    "inEarMonitoringModes": {
+      "NONE": "NONE",
+      "FILE": "FILE",
+      "MICROPHONE": "MOCROPHONE",
+      "ALL": "ALL"
+    },
+    "ctx": null,
+    "mediaStreamSource": null,
+    "mediaStreamDest": null,
+    "buffer": {}
+  },
+  "videoEffect": {
+    "canvas": null,
+    "video": null,
+    "fps": 30,
+    "stopChromeBackgroundLoop": null,
+    "enableBeauty": false,
+    "denoiseLevel": 5,
+    "lightLevel": 0.35,
+    "rednessLevel": 0.5,
+    "lighteningContrastLevel": 1,
+    "videoContextInited": false,
+    "originVideoTrack": null,
+    "canvasVideoTrack": null,
+    "ctx": null
+  },
+  "videoConstraint": {
+    "width": 640,
+    "height": 480,
+    "frameRate": {
+      "ideal": 30,
+      "max": 30
+    }
+  },
+  "audioConstraint": {},
+  "screenConstraint": {
+    "mediaSource": "screen",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": {
+      "ideal": 5,
+      "max": 5
+    }
+  },
+  "profile": "480p_4",
+  "videoName": "FaceTime HD Camera (Built-in) (05ac:8600)",
+  "audioName": "Default - Internal Microphone (Built-in)",
+  "publishLTS": 1592422280489,
+  "p2pId": 94508,
+  "connectionSpec": {
+    "audio": true,
+    "video": true,
+    "isSubscriber": false,
+    "turnServers": [
+      {
+        "username": "test",
+        "credential": "111111",
+        "forceturn": false,
+        "url": "107-155-2-162.edge.agora.io",
+        "tcpport": "5919",
+        "udpport": "5919"
+      }
+    ],
+    "minVideoBW": 100,
+    "maxVideoBW": 750,
+    "mode": "rtc",
+    "codec": "h264",
+    "isVideoMute": false,
+    "isAudioMute": false,
+    "maxFrameRate": 30,
+    "clientId": "C37BE",
+    "session_id": 104
+  },
+  "pc": {
+    "isVideoMute": false,
+    "isAudioMute": false,
+    "isSubscriber": false,
+    "clientId": "C37BE",
+    "filterStatsCache": [],
+    "originStatsCache": [],
+    "lastTimeGetStats": 1592422280492,
+    "pc_config": {
+      "iceServers": [
+        {
+          "url": "stun:webcs.agora.io:3478"
+        },
+        {
+          "username": "test",
+          "credential": "111111",
+          "credentialType": "password",
+          "urls": "turn:107-155-2-162.edge.agora.io:5919?transport=udp"
+        },
+        {
+          "username": "test",
+          "credential": "111111",
+          "credentialType": "password",
+          "urls": "turn:107-155-2-162.edge.agora.io:5919?transport=tcp"
+        }
+      ],
+      "sdpSemantics": "plan-b"
+    },
+    "con": {
+      "optional": [
+        {
+          "DtlsSrtpKeyAgreement": true
+        }
+      ]
+    },
+    "mediaConstraints": {
+      "mandatory": {
+        "OfferToReceiveVideo": true,
+        "OfferToReceiveAudio": true
+      }
+    },
+    "roapSessionId": 104,
+    "peerConnection": {},
+    "iceCandidateTimer": 37,
+    "sessionId": 104,
+    "sequenceNumber": 0,
+    "actionNeeded": true,
+    "iceStarted": false,
+    "moreIceComing": true,
+    "iceCandidateCount": 0,
+    "onaddstream": null,
+    "onremovestream": null,
+    "state": "new",
+    "browser": "chrome-stable"
+  }
+}

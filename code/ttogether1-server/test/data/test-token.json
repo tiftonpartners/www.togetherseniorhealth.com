@@ -1,0 +1,29 @@
+{
+    "iss": "https://dev-t9jxb3k9.us.auth0.com/",
+    "sub": "auth0|5f15a837965b8c0019fe6367",
+    "aud": [
+        "https://together1api.togetherseniorlife.com",
+        "https://dev-t9jxb3k9.us.auth0.com/userinfo"
+    ],
+    "iat": "1595487401",
+    "exp": "1595573801",
+    "azp": "NBDvM2hcVzkvwbtnuNNT3qQCe71kIbt2",
+    "scope": "openid profile email",
+    "gty": "password",
+    "permissions": [
+        "query:session",
+        "read:session",
+        "setglobal:logout",
+        "setglobal:mute",
+        "setglobal:view",
+        "setremote:mute",
+        "setremote:view",
+        "stream:instuctorview",
+        "test:session",
+        "update:session"
+    ],
+    "https://t1.tsh.com/programs": "RS,CC",
+    "https://t1.tsh.com/nickname": "Test",
+    "https://t1.tsh.com/name": "Test",
+    "https://t1.tsh.com/": "/"
+}

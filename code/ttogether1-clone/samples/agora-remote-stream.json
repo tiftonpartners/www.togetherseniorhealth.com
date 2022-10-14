@@ -1,0 +1,122 @@
+{
+  "dispatcher": {
+    "eventListeners": {
+      "audioSourceEnded": [null]
+    }
+  },
+  "params": {
+    "streamID": "test20",
+    "local": false,
+    "audio": true,
+    "video": false,
+    "uintUID": 10001
+  },
+  "local": false,
+  "video": false,
+  "audio": true,
+  "screenAudio": false,
+  "screenAttributes": {
+    "width": 1920,
+    "height": 1080,
+    "maxFr": 5,
+    "minFr": 1
+  },
+  "videoSize": [640, 480, 640, 480],
+  "audioLevelHelper": null,
+  "attributes": {
+    "resolution": "640x480",
+    "minFrameRate": 15,
+    "maxFrameRate": 15,
+    "minVideoBW": 100,
+    "maxVideoBW": 500
+  },
+  "inSwitchDevice": false,
+  "userMuteVideo": false,
+  "userMuteAudio": false,
+  "peerMuteVideo": true,
+  "peerMuteAudio": false,
+  "lowStream": null,
+  "videoWidth": 0,
+  "videoHeight": 0,
+  "streamId": "test20",
+  "userId": null,
+  "uintId": 10001,
+  "mirror": true,
+  "highQuality": false,
+  "stereo": false,
+  "speech": false,
+  "initialized": true,
+  "_streamInitID": null,
+  "audioMixing": {
+    "audioContextInited": false,
+    "defaultVolume": 100,
+    "inEarMonitoring": "FILE",
+    "sounds": {
+      "-1": {
+        "soundId": -1,
+        "state": "IDLE",
+        "muted": false,
+        "volume": 100,
+        "startAt": null,
+        "startOffset": null,
+        "pauseAt": null,
+        "pauseOffset": null,
+        "resumeAt": null,
+        "resumeOffset": null,
+        "stopAt": null,
+        "options": null,
+        "source": null
+      }
+    },
+    "states": {
+      "IDLE": "IDLE",
+      "STARTING": "STARTING",
+      "BUSY": "BUSY",
+      "PAUSED": "PAUSED"
+    },
+    "inEarMonitoringModes": {
+      "NONE": "NONE",
+      "FILE": "FILE",
+      "MICROPHONE": "MOCROPHONE",
+      "ALL": "ALL"
+    },
+    "ctx": null,
+    "mediaStreamSource": null,
+    "mediaStreamDest": null,
+    "buffer": {}
+  },
+  "videoEffect": {
+    "canvas": null,
+    "video": null,
+    "fps": 30,
+    "stopChromeBackgroundLoop": null,
+    "enableBeauty": false,
+    "denoiseLevel": 5,
+    "lightLevel": 0.35,
+    "rednessLevel": 0.5,
+    "lighteningContrastLevel": 1,
+    "videoContextInited": false,
+    "originVideoTrack": null,
+    "canvasVideoTrack": null,
+    "ctx": null
+  },
+  "videoConstraint": {
+    "width": 640,
+    "height": 480,
+    "frameRate": {
+      "ideal": 15,
+      "max": 15
+    }
+  },
+  "audioConstraint": {},
+  "screenConstraint": {
+    "mediaSource": "screen",
+    "width": 1920,
+    "height": 1080,
+    "frameRate": {
+      "ideal": 5,
+      "max": 5
+    }
+  },
+  "profile": "480p_1"
+}

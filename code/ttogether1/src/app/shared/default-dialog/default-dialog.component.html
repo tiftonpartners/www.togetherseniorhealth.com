@@ -1,0 +1,21 @@
+<h2 mat-dialog-title translate>
+  {{ data.title }}
+</h2>
+<button class="close" mat-dialog-close>
+  <i class="fa fa-times"></i>
+</button>
+<mat-dialog-content translate>
+  {{ data.message }}
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button class="btn btn-primary" mat-dialog-close="1" translate *ngIf="data.leaveButton">
+    {{ data.leaveButton }}
+  </button>
+  <button class="btn btn-error" mat-dialog-close="2" translate *ngIf="data.endButton">
+    {{ data.endButton }}
+  </button>
+  <button class="btn btn-error" mat-dialog-close cdkFocusInitial translate *ngIf="data.cancelButton">
+    {{ data.cancelButton }}
+  </button>
+</mat-dialog-actions>

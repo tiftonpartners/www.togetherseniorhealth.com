@@ -1,0 +1,51 @@
+<app-time-header> </app-time-header>
+<div class="container-fluid sessionLeave">
+  <div class="row">
+    <div class="sessionLeave__item" *ngIf="currentSession">
+      <article class="card card--early" *ngIf="nextSession || isEarly">
+        <div class="card-header" *ngIf="isOpenSession">
+          <h2 *ngIf="isEarly">
+            <span translate>{{ 'you left the class early!' | translate: { nickname: nickname } }}</span>
+          </h2>
+          <h2 *ngIf="!isEarly">
+            <span>{{ 'Great job today!' | translate: { nickname: nickname } }}</span>
+          </h2>
+        </div>
+        <div class="card-content" *ngIf="isEarly">
+          <div class="early">
+            <button class="btn btn-gradient btn-primary" (click)="returnToClass()">
+              <span>
+                <i class="fas fa-sign-in-alt"></i>
+                <span>
+                  {{ 'Return to Class' | translate }}
+                </span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="card-footer text-center" *ngIf="nextSession">
+          <h3 translate>Your next session is</h3>
+          <div class="date">
+            {{ nextSessionDateMessage }}
+          </div>
+          <h4 translate>See you there</h4>
+        </div>
+        <div class="card-footer text-center" *ngIf="isLast">
+          <div class="date" translate>There is no more sessions for this class.</div>
+        </div>
+      </article>
+      <article class="card card--last" *ngIf="isLast && !isEarly">
+        <div class="card-header text-center">
+          <div class="congrats-logo"></div>
+          <h1>
+            <span>{{ 'Congratulations!' | translate: { nickname: nickname } }}</span>
+          </h1>
+        </div>
+        <div class="card-content text-center">
+          <h2 translate>You completed</h2>
+          <div class="className" translate>{{ currentSession.name }}</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<header [class.d-none]="isHide">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    <a class="navbar-brand" href="./" translate>APP_NAME</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      aria-controls="navbar-menu"
+      aria-label="Toggle navigation"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="!menuHidden"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbar-menu" class="collapse navbar-collapse float-xs-none" [ngbCollapse]="menuHidden">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link text-uppercase" routerLink="/about" routerLinkActive="active">
+          <i class="fas fa-question-circle"></i>&nbsp;
+          <span translate>About</span>
+        </a>
+        <div *ngIf="false" class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+          <a id="language-dropdown" class="nav-link" ngbDropdownToggle>{{ currentLanguage }}</a>
+          <div ngbDropdownMenu aria-labelledby="language-dropdown">
+            <button class="dropdown-item" *ngFor="let language of languages" (click)="setLanguage(language)">
+              {{ language }}
+            </button>
+          </div>
+        </div>
+        <div class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+          <a id="user-dropdown" class="nav-link" ngbDropdownToggle>
+            <i class="fas fa-user-circle"></i>
+          </a>
+          <div ngbDropdownMenu aria-labelledby="user-dropdown">
+            <h6 class="dropdown-header">
+              <span translate>Logged in as</span>&nbsp;<b>{{ username }}</b>
+            </h6>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" (click)="logout()" translate>Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,84 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap");
+
+@font-face {
+  font-family: Aribaug;
+  src: url(assets/fonts/Aribau-Grotesk/AribauGrotesk-Rg.otf) format("opentype");
+
+  font-family: Serif;
+  src: url(assets/fonts/Serif_Pro/SourceSerifPro-Regular.ttf) format("truetype");
+
+  font-family: Verdana;
+  src: url(assets/fonts/Verdana/verdana.ttf) format("truetype");
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-family: $font-family-verdana;
+}
+
+body {
+  // background: $background;
+  // background-color: $background;
+  background-attachment: fixed;
+  background-image: linear-gradient(360deg, #e5e5e5 0%, #e5e5e5 28.65%, #fff 100%);
+
+  &.video-check {
+    background-image: linear-gradient(to left, #4b4456 0%, #35323d 25.51%, #35323d 25.52%, #2a272f 100%);
+  }
+
+  &.meeting {
+    background-image: linear-gradient(to left, #4b4456 0%, #35323d 23.88%, #2d2930 93.58%);
+  }
+
+  &.meeting--student {
+    background-image: linear-gradient(to left, #4b4456 0%, #35323d 23.88%, #2d2930 93.58%);
+  }
+
+  color: $indigo;
+}
+
+.title {
+  font-size: $h1-font-size;
+  font-weight: $headings-font-weight;
+}
+
+@media screen and (max-height: 768px) {
+  $h1-font-size: 3.375rem;
+  $h2-font-size: 2.25rem;
+  $h3-font-size: 2rem;
+
+  h1,
+  .title {
+    font-size: $h1-font-size - 0.8rem;
+  }
+
+  h2 {
+    font-size: $h2-font-size - 0.8rem;
+  }
+
+  h3 {
+    font-size: $h3-font-size - 0.8rem;
+  }
+}
+
+.bottom-line {
+  border-bottom: 1px solid $line-color !important;
+}
+
+.pd-tb-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pd-lr-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}

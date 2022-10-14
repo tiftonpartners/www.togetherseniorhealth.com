@@ -1,0 +1,274 @@
+@import "src/theme/theme-variables";
+
+$gradient-left-color: #1a191c;
+$gradient-right-color: #4b4456;
+
+$z-index-container: 2;
+$z-index-focus: 10;
+$menu-width: 300px;
+
+@mixin getIcon($iconName) {
+  background-image: url("../../../assets/svg/icon-"+$iconName+".svg");
+}
+
+.music-volume {
+  padding-top: 1em;
+}
+
+.meeting {
+  height: calc(100vh);
+  position: relative;
+  display: flex;
+
+  &__container,
+  &__controls {
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &__controls {
+    padding: 0 25px 0 0;
+    flex-direction: column;
+    width: auto;
+
+    control-button {
+      margin-bottom: 6px;
+    }
+
+    &--common,
+    &--student,
+    &--instructor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--student {
+      align-items: flex-end;
+      width: 110px;
+
+      &--logo {
+        width: 100%;
+        padding: 20px 20px 34px 20px;
+      }
+    }
+
+    &--group {
+      margin-bottom: 20px;
+    }
+
+    &--group-no-margin {
+      control-button {
+        margin-bottom: 0;
+      }
+    }
+
+    &--no-margin {
+      margin-bottom: 0;
+    }
+  }
+
+  &__container {
+    flex-grow: 1;
+
+    &-videos {
+      display: block;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      position: relative;
+      /* background-color: darkorange; */
+      width: 100%;
+      height: 100%;
+    }
+
+    &-video {
+      margin: 0 20px 20px 0;
+    }
+
+    &-video--spotlight {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: $z-index-focus;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &--menu-opened {
+    .meeting__controls {
+      width: 240px;
+      min-width: 240px;
+    }
+  }
+
+  &--is-student {
+    .meeting__container {
+      $container: &;
+
+      &--focus {
+        .meeting__container-videos {
+          width: 100%;
+          height: 100%;
+        }
+
+        .meeting__container-video {
+          display: none;
+        }
+
+        .meeting__container-video--focus,
+        .meeting__container-video--spotlight {
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .meeting__controls {
+      order: 1;
+      width: auto;
+      padding-left: 20px;
+      padding-right: 0;
+      margin-left: auto;
+
+      &--group {
+        margin-bottom: 0;
+      }
+
+      control-button {
+        margin-bottom: 34px;
+
+        &:last-of-type {
+          margin-top: auto;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.askForHelp__container {
+  background-color: rgba($blue, 0.9);
+  border: 3px solid $white;
+  border-right: 0 none;
+  border-radius: 10px 0 0 10px;
+  padding: 20px 24px;
+  color: $white;
+  font-size: $default-font-size;
+  font-family: $font-family-verdana;
+  position: absolute;
+  width: 370px;
+  right: 0;
+  transition: top 0.1s;
+  z-index: $zindex-modal;
+
+  p {
+    margin: 0;
+  }
+}
+
+/* stylelint-disable
+    no-descending-specificity,
+    selector-max-compound-selectors,
+    selector-max-specificity,
+    max-nesting-depth
+*/
+:host ::ng-deep {
+  .meeting__controls--group-no-margin {
+    control-button {
+      &:first-child {
+        .controlButton,
+        .controlButton__container {
+          border-radius: 10px 10px 0 0;
+        }
+      }
+
+      &:last-child {
+        .controlButton,
+        .controlButton__container {
+          border-radius: 0 0 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+.form-check-label,
+button {
+  font-family: $font-family-verdana;
+  font-size: 1rem;
+}
+
+.modal-title {
+  font-family: $font-family-verdana;
+}
+
+.form-check-input {
+  margin-top: 0.6rem;
+}
+
+label {
+  font-size: 1rem;
+  margin-left: 0.6rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+.help-message {
+  margin-top: 1.3rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  margin-top: 1rem;
+  span {
+    font-size: 0.6rem;
+  }
+}
+
+.modal-header {
+  padding-bottom: 0;
+}
+
+.rounded-modal .modal-header {
+  border-bottom: none;
+}
+
+.leave-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  margin-top: 1rem;
+
+  button {
+    margin-left: 0.5em;
+    margin-top: 1em;
+  }
+
+  .btn-cancel {
+    @include button-variant(white, $buttons-primary, darken(white, 8%));
+    border-width: 2px;
+  }
+
+  .btn-end {
+    @include button-variant(lighten($coral, 4%), lighten($coral, 2%), lighten($coral, 0%));
+    border-width: 2px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.leave-buttons > .btn.btn-radius:focus {
+  box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 100%);
+}

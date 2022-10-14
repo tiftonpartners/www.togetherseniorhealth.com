@@ -1,0 +1,203 @@
+[
+    {
+        "name": "MovingTogether (Standing)",
+        "description": "Moving Together, Standing",
+        "acronym": "MTSTAND",
+        "state": "open",
+        "program": "RS",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 24,
+        "capacity": 8,
+        "classes": [
+            {
+                "schedule": {
+                    "weekdays": ["mon", "wed"],
+                    "startTime": {
+                        "hour": 13,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-06",
+                "instructor": "instructor1",
+                "participants": ["test1", "test2", "test3", "test4"],
+                "acronym": "G1"
+            },
+            {
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 13,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-07",
+                "instructor": "instructor2",
+                "participants": ["test5", "test6", "test7", "test8"],
+                "acronym": "G2"
+            },
+            {
+                "schedule": {
+                    "weekdays": ["wed", "fri"],
+                    "startTime": {
+                        "hour": 11,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-08",
+                "instructor": "instructor3",
+                "participants": [
+                    "test9",
+                    "test10",
+                    "test11",
+                    "test12",
+                    { "sid": "1011", "program": "RS" }
+                ],
+                "acronym": "G3"
+            },
+            {
+                "schedule": {
+                    "weekdays": ["wed", "fri"],
+                    "startTime": {
+                        "hour": 9,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-09",
+                "instructor": "instructor3",
+                "participants": [],
+                "acronym": "G4"
+            }
+        ]
+    },
+    {
+        "name": "MovingTogether (Sitting)",
+        "description": "Moving Together, Sitting",
+        "acronym": "MTSIT",
+        "state": "open",
+        "program": "RS",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 24,
+        "capacity": 8,
+        "classes": [
+            {
+                "schedule": {
+                    "weekdays": ["wed", "fri"],
+                    "startTime": {
+                        "hour": 10,
+                        "mins": 30,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-10",
+                "instructor": "instructor1",
+                "participants": [
+                    "test1",
+                    "test2",
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "G1"
+            },
+            {
+                "schedule": {
+                    "weekdays": ["tue", "thu"],
+                    "startTime": {
+                        "hour": 11,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-11",
+                "instructor": "instructor2",
+                "participants": [
+                    { "sid": "1020", "program": "RS" },
+                    { "sid": "1019", "program": "RS" },
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "G2"
+            },
+            {
+                "schedule": {
+                    "weekdays": ["wed", "thu"],
+                    "startTime": {
+                        "hour": 14,
+                        "mins": 0,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-12-12",
+                "instructor": "instructor3",
+                "disableEmails": "true",
+                "participants": [
+                    { "sid": "1020", "program": "RS" },
+                    { "sid": "1019", "program": "RS" },
+                    { "sid": "1011", "program": "RS" },
+                    "server1-1",
+                    "server1-2",
+                    "server1-3",
+                    "server2-1",
+                    "server2-2",
+                    "server2-3"
+                ],
+                "acronym": "G3"
+            }
+        ]
+    },
+    {
+        "name": "QE Team",
+        "description": "Course for QE team testing",
+        "acronym": "QETEAM",
+        "state": "open",
+        "program": "CC",
+        "isPreflight": false,
+        "waitlisting": false,
+        "durationMins": 60,
+        "lobbyTimeMins": 15,
+        "numSessions": 24,
+        "capacity": 8,
+        "classes": [
+            {
+                "schedule": {
+                    "weekdays": ["mon", "wed"],
+                    "startTime": {
+                        "hour": 10,
+                        "mins": 30,
+                        "tz": "America/Los_Angeles"
+                    }
+                },
+                "startDate0Z": "2021-04-01",
+                "instructor": "inst3-auto",
+                "participants": [
+                    { "sid": "5516", "program": "CC" },
+                    { "sid": "5517", "program": "CC" },
+                    { "sid": "5518", "program": "CC" },
+                    { "sid": "5519", "program": "CC" },
+                    { "sid": "5520", "program": "CC" },
+                    { "sid": "5521", "program": "CC" },
+                    { "sid": "5522", "program": "CC" },
+                    { "sid": "5523", "program": "CC" }
+                ],
+                "acronym": "MTTAC1"
+            }
+        ]
+    }
+]

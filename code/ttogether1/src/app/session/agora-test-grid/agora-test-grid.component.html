@@ -1,0 +1,181 @@
+<section class="meeting" [class.meeting--menu-opened]="menuOpened" [class.meeting--is-student]="!showGlobalCommands">
+  <section class="meeting__container" [class.meeting__container--focus]="isSpotlighting">
+    <section class="meeting__controls" *ngIf="localUser">
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="doToggleMenuClick()"
+          icon="eye-slash"
+          toggleIcon="eye"
+          [toggle]="!menuOpened"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Hide Controls</span>
+        </control-button>
+      </div>
+
+      <div
+        class="meeting__controls--instructor meeting__controls--group meeting__controls--group-no-margin"
+        *ngIf="showGlobalCommands && canSetViewAll"
+      >
+        <control-button
+          (click)="doGroupViewClick()"
+          icon="grid-view"
+          [toggle]="false"
+          [active]="!isSpotlighting"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Group View</span>
+        </control-button>
+
+        <control-button
+          (click)="doSpotlightViewClick()"
+          icon="spotlight"
+          [toggle]="false"
+          [active]="isSpotlighting"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Instructor View</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands && canMuteAll">
+        <control-button
+          (click)="doMuteAllClick()"
+          icon="mute-all"
+          [toggle]="false"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Mute All</span>
+        </control-button>
+
+        <control-button
+          (click)="doUnmuteAllClick()"
+          icon="unmute-all"
+          [toggle]="false"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Unmute All</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="doToggleMicClick()"
+          icon="mic-slash"
+          toggleIcon="mic"
+          [toggle]="localUser.isMicOn"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="localUser.isMicOn && menuOpened">Mute Yourself</span>
+          <span translate *ngIf="!localUser.isMicOn && menuOpened">Unmute Yourself</span>
+        </control-button>
+
+        <control-button
+          (click)="doToggleCameraClick()"
+          icon="camera"
+          toggleIcon="camera-slash"
+          [toggle]="localUser.isCameraOn"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="localUser.isCameraOn && menuOpened">Turn Camera Off</span>
+          <span translate *ngIf="!localUser.isCameraOn && menuOpened">Turn Camera On</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--student" *ngIf="!showGlobalCommands">
+        <control-button
+          (click)="doToggleMicClick()"
+          icon="mic-slash"
+          toggleIcon="mic"
+          [toggle]="localUser.isMicOn"
+          [textWrap]="true"
+        >
+          <span translate *ngIf="localUser.isMicOn">Mute Yourself</span>
+          <span translate *ngIf="!localUser.isMicOn">Unmute Yourself</span>
+        </control-button>
+
+        <control-button
+          (click)="doToggleCameraClick()"
+          icon="camera"
+          toggleIcon="camera-slash"
+          [toggle]="localUser.isCameraOn"
+          [textWrap]="true"
+        >
+          <span translate *ngIf="localUser.isCameraOn">Turn Off Camera</span>
+          <span translate *ngIf="!localUser.isCameraOn">Turn On Camera</span>
+        </control-button>
+
+        <control-button (click)="refreshPage()" icon="reload" [textWrap]="true">
+          <span translate>Start Over</span>
+        </control-button>
+
+        <control-button icon="leave" [textWrap]="true" (click)="endClass()">
+          <span translate>Leave Class</span>
+        </control-button>
+
+        <div class="askForHelp__container" *ngIf="askedForHelp" #askForHelpContainer>
+          <h4 translate>Help is on the way</h4>
+          <p>Have your phone near you.</p>
+        </div>
+
+        <control-button
+          icon="hand"
+          toggleIcon="hand"
+          (click)="askForHelp()"
+          [toggle]="!showGlobalCommands"
+          [active]="askedForHelp"
+          [small]="true"
+          #askForHelpButton
+        >
+          <span translate>Get Help</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--instructor" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="toggleRecording()"
+          icon="pause"
+          toggleIcon="record"
+          [toggle]="!isRecording"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="!isRecording && menuOpened">Resume Recording</span>
+          <span translate *ngIf="isRecording && menuOpened">Pause Recording</span>
+        </control-button>
+
+        <control-button *ngIf="canLogoutAll" icon="leave" [hideText]="!menuOpened" (click)="endClass()">
+          <span translate *ngIf="menuOpened">Leave Class</span>
+        </control-button>
+      </div>
+    </section>
+
+    <section class="meeting__container-videos" #container>
+      <app-session-video
+        *ngFor="let meetingUserInfo of meetingUserInfos"
+        [meetingUser]="meetingUserInfo.meetingUser"
+        [userInfo]="meetingUserInfo.userInfo"
+        class="meeting__container-video"
+        [class.meeting__container-video--focus]="meetingUserInfo && !meetingUserInfo.isHidden"
+        [spotlight]="meetingUserInfo.isSpotlight"
+        [videoContainerId]="meetingUserInfo.videoContainerId"
+        [showControls]="meetingUserInfo.showControls"
+        [isJoined]="meetingUserInfo.isJoined"
+        [isMicOn]="meetingUserInfo.isMicOn"
+        [hidden]="meetingUserInfo.isHidden"
+        [location]="meetingUserInfo.location"
+        (speaking)="(meetingUserInfo.isSpeaking)"
+        (changeView)="doSpotlightEvent($event)"
+        (controlMicrophone)="doParticipantMicrophoneEvent($event)"
+        (controlVideo)="doParticipantVideoEvent($event)"
+      ></app-session-video>
+    </section>
+  </section>
+</section>

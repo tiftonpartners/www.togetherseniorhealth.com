@@ -1,0 +1,9 @@
+{
+  "name": "socket-test-example",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "socket.io": "^2.3.0",
+    "express": "^4.17.1"
+  }
+}

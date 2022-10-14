@@ -1,0 +1,84 @@
+<div
+  class="session__video-item"
+  #videoItem
+  [class.session__video-item--hidden]="hidden"
+  [class.session__video-item--active]="speaking"
+  [class.session__video-item--no-stream]="!isJoined"
+>
+  <div
+    class="session__video-container"
+    [class.session__video-container--hovered]="controlsVisable"
+    [attr.id]="videoContainerId"
+    #videoContainer
+    (window.resize)="onResize($event)"
+    (mouseenter)="toggleOptions(true)"
+    (mouseleave)="toggleOptions(false)"
+  >
+    <div
+      [appAgoraVideoPlayer]="trackoptions"
+      class="session__video-container__video"
+      [class.session__video-container__video--hidden]="!isCameraOn"
+    ></div>
+
+    <div class="session__video-container__stats">
+      <div class="session__video-container__stats--text">{{ statsStr }}</div>
+    </div>
+    <div class="session__video-container__muteoverlay" *ngIf="!isCameraOn">
+      <span class="icon-camera-overlay-muted"></span>
+    </div>
+
+    <div class="session__video-container__overlay">
+      <div class="button-container">
+        <button
+          class="session__video-container__button session__video-container__button--spotlight"
+          [disabled]="spotlight"
+          (click)="onClickSpotlight()"
+        >
+          <span>Spotlight</span>
+        </button>
+        <button
+          class="session__video-container__button"
+          [class.session__video-container__button--unmute]="!isMicOn"
+          [class.session__video-container__button--mute]="isMicOn"
+          (click)="onClickMute()"
+        >
+          <span>{{ isMicOn ? 'Mute' : 'Unmute' }}</span>
+        </button>
+        <button
+          class="session__video-container__button session__video-container__button--camera"
+          [class.session__video-container__button--camera-off]="!isCameraOn"
+          [class.session__video-container__button--camera-on]="isCameraOn"
+          (click)="onClickVideo()"
+        >
+          <span>{{ isCameraOn ? 'Camera Off' : 'Camera On' }}</span>
+        </button>
+        <button
+          class="session__video-container__button session__video-container__button--try-again"
+          (click)="onClickStartOver()"
+        >
+          <span>Start Over</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="session__indicators" *ngIf="showIndicators">
+      <div (click)="onClickQOS()" *ngIf="qos" class="session__indicator session__indicator--qos">
+        <span class="session__indicator--icon"></span>
+      </div>
+      <div *ngIf="spotlight" class="session__indicator session__indicator--spotlight">
+        <span class="session__indicator--icon"></span>
+      </div>
+      <div (click)="onClickHelpRequested()" *ngIf="helpWanted" class="session__indicator session__indicator--help">
+        <span class="session__indicator--icon"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="session__video-info-bar" *ngIf="userInfo">
+    <span class="icon-mic-white-slash" *ngIf="!isMicOn"></span>
+    <span class="session__video-info-bar__nickname">
+      {{ name }}
+    </span>
+    <!-- span class="instructor" *ngIf="isInstructor" translate>(Instructor)</!-->
+  </div>
+</div>

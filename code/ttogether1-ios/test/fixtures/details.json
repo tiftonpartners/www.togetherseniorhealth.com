@@ -1,0 +1,110 @@
+{
+  "participants": [
+    "TSH-Admin|60638f7a81071200042d95b3",
+    "auth0|6049601481454200709b4817",
+    "auth0|5fc5553e3b76180068de1d4e",
+    "auth0|5fc5553daf785a00698336c4",
+    "auth0|5fc5553ce4379a00768cf149",
+    "auth0|5fc5553ca7674a006e94c83f",
+    "auth0|5fc5553aa7674a006e94c83a",
+    "auth0|5fc55539d5c13c006f0bfe27"
+  ],
+  "disableEmails": false,
+  "_id": "60638e5a81071200042d95ac",
+  "name": "Moving Together (IOS) - Group 1",
+  "description": "Test class for IOS development, Group 1",
+  "acronym": "MTIOS1G1",
+  "helpMessage": "The instructor has been notified and will help you soon.",
+  "checkPageHelpMessage": "Please call the community manager at (xxx)-xxx-xxxx for help",
+  "instructorId": "auth0|6063865c77b322006822b2d0",
+  "createdOn": "2021-03-30T20:47:22.679Z",
+  "sessions": [
+    {
+      "disableEmails": false,
+      "__t": "ClassSession",
+      "_id": "60638e9681071200042d95af",
+      "createdOn": "2021-03-30T20:48:22.343Z",
+      "name": "Moving Together (IOS) - Group 1, Session 1",
+      "acronym": "MTIOS1G1-211201",
+      "classId": "60638e5a81071200042d95ac",
+      "seq": 1,
+      "provider": "AGORA",
+      "providerId": "MTIOS1G1-211201",
+      "date0Z": "2021-12-01",
+      "scheduledStartTime": "2021-12-01T19:00:00.000Z",
+      "scheduledEndTime": "2021-12-01T20:00:00.000Z",
+      "lobbyOpenTime": "2021-12-01T18:45:00.000Z",
+      "lobbyCloseTime": "2021-12-01T20:15:00.000Z",
+      "tz": "America/Los_Angeles",
+      "lobbyTimeMins": 15,
+      "durationMins": 60,
+      "instructorId": "auth0|6063865c77b322006822b2d0",
+      "helpMessage": "The instructor has been notified and will help you soon.",
+      "program": "TEST"
+    },
+    {
+      "disableEmails": false,
+      "__t": "ClassSession",
+      "_id": "60638e9681071200042d95b1",
+      "createdOn": "2021-03-30T20:48:22.348Z",
+      "name": "Moving Together (IOS) - Group 1, Session 2",
+      "acronym": "MTIOS1G1-211208",
+      "classId": "60638e5a81071200042d95ac",
+      "seq": 2,
+      "provider": "AGORA",
+      "providerId": "MTIOS1G1-211208",
+      "date0Z": "2021-12-08",
+      "scheduledStartTime": "2021-12-08T19:00:00.000Z",
+      "scheduledEndTime": "2021-12-08T20:00:00.000Z",
+      "lobbyOpenTime": "2021-12-08T18:45:00.000Z",
+      "lobbyCloseTime": "2021-12-08T20:15:00.000Z",
+      "tz": "America/Los_Angeles",
+      "lobbyTimeMins": 15,
+      "durationMins": 60,
+      "instructorId": "auth0|6063865c77b322006822b2d0",
+      "helpMessage": "The instructor has been notified and will help you soon.",
+      "program": "TEST"
+    }
+  ],
+  "courseId": "606385a681071200042d95ab",
+  "program": "TEST",
+  "__v": 138,
+  "capacity": 8,
+  "durationMins": 60,
+  "instructorData": {
+    "created_at": "2021-03-30T20:13:16.815Z",
+    "email": "instructor-ios-1@tsh.care",
+    "email_verified": false,
+    "identities": [
+      {
+        "user_id": "6063865c77b322006822b2d0",
+        "provider": "auth0",
+        "connection": "Username-Password-Authentication",
+        "isSocial": false
+      }
+    ],
+    "name": "instructor-ios-1",
+    "nickname": "instructor-ios-1",
+    "picture": "https://s.gravatar.com/avatar/188c9323d5ae2ccaaf827d12368de96d?s=480&r=pg&d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fin.png",
+    "updated_at": "2021-03-30T20:46:17.317Z",
+    "user_id": "auth0|6063865c77b322006822b2d0",
+    "username": "instructorios1",
+    "last_login": "2021-03-30T20:21:07.001Z",
+    "last_ip": "73.19.19.4",
+    "logins_count": 1
+  },
+  "lobbyTimeMins": 15,
+  "numSessions": 2,
+  "schedule": {
+    "startTime": {
+      "hour": 11,
+      "mins": 0,
+      "tz": "America/Los_Angeles"
+    },
+    "weekdays": [
+      "wed"
+    ],
+    "_id": "60638e9681071200042d95ad"
+  },
+  "startDate0Z": "2021-12-01T21:47:00.000Z"
+}

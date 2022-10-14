@@ -1,0 +1,335 @@
+<style>
+  .rounded-modal .modal-content {
+    border-radius: 1rem;
+    border-width: 4px;
+    border-color: #bfe683;
+  }
+</style>
+
+<section class="meeting" [class.meeting--menu-opened]="menuOpened" [class.meeting--is-student]="!showGlobalCommands">
+  <section class="meeting__container" [class.meeting__container--focus]="isSpotlighting">
+    <section class="meeting__controls" *ngIf="localUser">
+      <div class="meeting__controls--instructor" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="doToggleMenuClick()"
+          icon="eye-slash"
+          toggleIcon="eye"
+          [toggle]="!menuOpened"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Hide Controls</span>
+        </control-button>
+      </div>
+
+      <div
+        class="meeting__controls--instructor meeting__controls--group meeting__controls--group-no-margin"
+        *ngIf="showGlobalCommands && canSetViewAll"
+      >
+        <control-button
+          (click)="doGroupViewClick()"
+          icon="grid-view"
+          [toggle]="false"
+          [active]="!isSpotlighting"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Group View</span>
+        </control-button>
+
+        <control-button
+          (click)="doSpotlightViewClick()"
+          icon="spotlight"
+          [toggle]="false"
+          [active]="isSpotlighting"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Instructor View</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands && canMuteAll">
+        <control-button
+          (click)="doMuteAllClick()"
+          icon="mute-all"
+          [toggle]="false"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Mute All</span>
+        </control-button>
+
+        <control-button
+          (click)="doUnmuteAllClick()"
+          icon="unmute-all"
+          [toggle]="false"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="menuOpened">Unmute All</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="doToggleMicClick()"
+          icon="mic-slash"
+          toggleIcon="mic"
+          [toggle]="localUser.isMicOn"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="localUser.isMicOn && menuOpened">Mute Yourself</span>
+          <span translate *ngIf="!localUser.isMicOn && menuOpened">Unmute Yourself</span>
+        </control-button>
+
+        <control-button
+          (click)="doToggleCameraClick()"
+          icon="camera-slash"
+          toggleIcon="camera"
+          [toggle]="localUser.isCameraOn"
+          [textWrap]="!showGlobalCommands"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="localUser.isCameraOn && menuOpened">Turn Camera Off</span>
+          <span translate *ngIf="!localUser.isCameraOn && menuOpened">Turn Camera On</span>
+        </control-button>
+      </div>
+
+      <div class="meeting__controls--student" *ngIf="!showGlobalCommands">
+        <div class="meeting__controls--student--logo">
+          <img src="assets/svg/icon-logo.svg" />
+        </div>
+
+        <control-button
+          (click)="doToggleMicClick()"
+          icon="mic-slash"
+          toggleIcon="mic"
+          [toggle]="localUser.isMicOn"
+          [textWrap]="true"
+        >
+          <span translate *ngIf="localUser.isMicOn">Mute Yourself</span>
+          <span translate *ngIf="!localUser.isMicOn">Unmute Yourself</span>
+        </control-button>
+
+        <control-button
+          (click)="doToggleCameraClick()"
+          icon="camera-slash"
+          toggleIcon="camera"
+          [toggle]="localUser.isCameraOn"
+          [textWrap]="true"
+        >
+          <span translate *ngIf="localUser.isCameraOn">Turn Off Camera</span>
+          <span translate *ngIf="!localUser.isCameraOn">Turn On Camera</span>
+        </control-button>
+
+        <control-button (click)="refreshPage()" icon="reload" [textWrap]="true">
+          <span translate>Start Over</span>
+        </control-button>
+
+        <control-button icon="leave" [textWrap]="true" (click)="openLeaveConfirmModel(leaveconfirm)">
+          <span translate>Leave Class</span>
+        </control-button>
+
+        <div class="askForHelp__container" *ngIf="askedForHelp" #askForHelpContainer>
+          <h4 translate>{{ customHelpMessage }}</h4>
+        </div>
+
+        <control-button
+          icon="hand"
+          toggleIcon="hand"
+          (click)="doAskForHelpClick()"
+          [toggle]="!showGlobalCommands"
+          [active]="askedForHelp"
+          [small]="true"
+          #askForHelpButton
+        >
+          <span translate>Get Help</span>
+        </control-button>
+      </div>
+      <div class="meeting__controls--instructor meeting__controls--group" *ngIf="showGlobalCommands">
+        <control-button
+          (click)="toggleRecording()"
+          icon="pause"
+          toggleIcon="record"
+          [toggle]="!isRecording"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+          *ngIf="!_sessionStateService.getSession().isAdHoc"
+        >
+          <span translate *ngIf="!isRecording && menuOpened">Resume Recording</span>
+          <span translate *ngIf="isRecording && menuOpened">Pause Recording</span>
+        </control-button>
+        <control-button
+          (click)="doToggleMusicClick()"
+          icon="pause"
+          toggleIcon="play"
+          [toggle]="!isMusicPlaying"
+          [textWrap]="false"
+          [hideText]="!menuOpened"
+        >
+          <span translate *ngIf="!isMusicPlaying && menuOpened">Play Music</span>
+          <span translate *ngIf="isMusicPlaying && menuOpened">Pause Music</span>
+        </control-button>
+      </div>
+      <div class="meeting__controls--instructor" *ngIf="showGlobalCommands">
+        <control-button
+          *ngIf="canLogoutAll"
+          icon="leave"
+          [hideText]="!menuOpened"
+          (click)="openLeaveConfirmModel(leaveconfirm)"
+        >
+          <span translate *ngIf="menuOpened">Leave Class</span>
+        </control-button>
+      </div>
+    </section>
+
+    <section class="meeting__container-videos" #container>
+      <app-session-video
+        *ngFor="let meetingUserInfo of meetingUserInfos"
+        [meetingUser]="meetingUserInfo.meetingUser"
+        [remoteStreamType]="meetingUserInfo.remoteStreamType"
+        [userInfo]="meetingUserInfo.userInfo"
+        class="meeting__container-video"
+        [class.meeting__container-video--focus]="meetingUserInfo && !meetingUserInfo.isHidden"
+        [spotlight]="meetingUserInfo.isSpotlight"
+        [isTheInstructor]="isTheInstructor"
+        [helpWanted]="meetingUserInfo.helpWanted"
+        [videoContainerId]="meetingUserInfo.videoContainerId"
+        [showControls]="meetingUserInfo.showControls"
+        [showIndicators]="isTheInstructor"
+        [isJoined]="meetingUserInfo.isJoined"
+        [speaking]="meetingUserInfo.isSpeaking"
+        [isMicOn]="meetingUserInfo.isMicOn"
+        [isCameraOn]="meetingUserInfo.isCameraOn"
+        [hidden]="meetingUserInfo.isHidden"
+        [location]="meetingUserInfo.location"
+        [sessionInactive]="meetingUserInfo.isSessionInactive"
+        [videoOptimizationMode]="meetingUserInfo.videoOptimizationMode"
+        (changeView)="doSpotlightEvent($event)"
+        (controlMicrophone)="doParticipantMicrophoneEvent($event)"
+        (controlVideo)="doParticipantVideoEvent($event)"
+        (startOver)="doParticipantStartOver($event)"
+        (clearHelp)="doClearHelp($event)"
+      ></app-session-video>
+    </section>
+  </section>
+</section>
+
+<!-- Modal for AV Controls -->
+<ng-template #avcontrols let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Settings</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          [(ngModel)]="agoraDebug"
+          name="agoraDebug"
+          id="agoraDebugCB"
+          (change)="handleAgoraLevelChanged($event)"
+        />
+        <label class="form-check-label" for="agoraDebugCB">
+          Agora Debugging
+        </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          [(ngModel)]="videoStats"
+          name="videoStats"
+          id="videoStatsCB"
+          (change)="handleStatsChanged($event)"
+        />
+        <label class="form-check-label" for="videoStatsCB">
+          Video Stats
+        </label>
+      </div>
+      <div *ngIf="isTheInstructor" class="music-volume">
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          [(ngModel)]="musicVolume"
+          name="musicVolume"
+          class="slider"
+          id="volumeSliderCtl"
+          (change)="musicVolumeChanged($event)"
+        />
+        <label for="volumeSliderCtl">
+          Music Volume
+        </label>
+      </div>
+
+      <div class="input-group" *ngIf="isTheInstructor">
+        <select
+          name="selectMusic"
+          [(ngModel)]="selectedMusic"
+          class="form-selectß"
+          aria-label="Default select example"
+          (ngModelChange)="doMusicSelected($event)"
+        >
+          <option *ngFor="let musicFile of musicFiles" [ngValue]="musicFile">{{ musicFile.title }} </option>
+        </select>
+      </div>
+      <div class="input-group help-message" *ngIf="isTheInstructor">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Help<br />Message</span>
+        </div>
+        <textarea
+          class="form-control"
+          maxlength="80"
+          aria-label="Help Message"
+          name="helpMessage"
+          [(ngModel)]="customHelpMessage"
+        ></textarea>
+      </div>
+      <div class="modal-footer">
+        <span>{{ credentialService.credentials.sub }}</span
+        ><span>{{ version }}&nbsp;{{ timeStamp }} </span>
+      </div>
+    </form>
+  </div>
+</ng-template>
+
+<!-- Modal for Leave Confirmation -->
+<ng-template #leaveconfirm let-modal>
+  <div class="modal-header">
+    <h4 *ngIf="isTheInstructor" class="modal-title" id="leaveConfirmTitle">Leave or End Class</h4>
+    <h4 *ngIf="!isTheInstructor" class="modal-title" id="leaveConfirmTitle">Leave Class</h4>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div *ngIf="isTheInstructor" id="leave-title-instr">
+        Do you want to leave class or end class for all?
+      </div>
+      <div *ngIf="!isTheInstructor" id="leave-title-instr">
+        Do you want to leave class?
+      </div>
+      <div class="leave-buttons">
+        <button type="button" class="btn btn-radius" ngbAutofocus (click)="modal.close('leave')">Leave</button>
+        <button
+          *ngIf="isTheInstructor"
+          type="button"
+          class="btn btn-end"
+          (click)="modal.close('end')"
+          data-dismiss="modal"
+        >
+          End Class
+        </button>
+        <button type="button" class="btn btn-cancel" data-dismiss="modal" (click)="modal.close('cancel')">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</ng-template>

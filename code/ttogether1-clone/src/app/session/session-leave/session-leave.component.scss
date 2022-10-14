@@ -1,0 +1,68 @@
+@import "src/theme/theme-variables";
+
+.sessionLeave {
+  font-family: $font-family-verdana;
+
+  &__item {
+    width: 100%;
+  }
+
+  .card {
+    width: 650px;
+    max-width: 650px;
+    margin: 0 auto;
+
+    &-header,
+    &-content,
+    &-footer {
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 1.4rem;
+  }
+
+  .date {
+    font-size: 1.8rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .card--last {
+    background-color: transparent;
+    box-shadow: none;
+    max-width: 100%;
+    width: auto;
+
+    .congrats-logo {
+      @include getIcon("congratulations");
+
+      background-repeat: no-repeat;
+      height: 237px;
+      margin: 0 auto;
+      width: 181px;
+      margin-bottom: 2rem;
+    }
+
+    .className {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .card-header,
+    .card-content,
+    .card-footer {
+      border: 0 none;
+    }
+  }
+}

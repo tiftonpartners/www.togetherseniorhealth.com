@@ -1,0 +1,112 @@
+<app-time-header [forcedTime]="forcedTime"> </app-time-header>
+<section
+  class="upcommingSessions"
+  [class.upcommingSessions--instructor]="isAnInstructor"
+  [class.upcommingSessions--student]="!isAnInstructor"
+>
+  <div class="container-fluid">
+    <div class="row">
+      <div *ngIf="userProfile" class="upcommingSessions__welcome col-sm-12 d-flex">
+        <div class="mb-10 text-center">
+          Stay active. Stay social. Stay Together.
+        </div>
+        <h2 *ngIf="!isAnInstructor" class="text-center">
+          <span translate>Welcome, </span>
+          <span>{{ userProfile.name }}</span>
+        </h2>
+        <div class="welcome" *ngIf="isAnInstructor">
+          <span translate>Welcome, </span>
+          <span>{{ userProfile.name }}!</span>
+        </div>
+        <h1 *ngIf="isAnInstructor">
+          <span translate>Your MOVING Together Classes</span>
+        </h1>
+        <div *ngIf="!userAgentIsSupported" class="upcommingSessions__warning">
+          <div>The <b>Google Chrome</b> browser is recommended to join your MOVING Together class.</div>
+          <ol>
+            <li>Copy your meeting link by clicking on the button below</li>
+            <li>Open Google Chrome (look for this icon <img src="assets/svg/chrome-logo.svg" />)</li>
+            <li>Click on the search bar in Chrome and paste the link there to join the class</li>
+          </ol>
+          <button id="copy_my_link" class="btn btn-primary btn-gradient" (click)="copyULRtoClipboard()">
+            <span class="copy__text">Copy Meeting Link</span>
+          </button>
+        </div>
+      </div>
+
+      <div
+        *ngFor="let klass of classes"
+        class="upcommingSessions__session"
+        [class.upcommingSessions__session--today]="klass.firstSession.isToday"
+        [ngClass]="{ 'col-md-6 col-lg-4': isAnInstructor }"
+      >
+        <article class="card" [attr.data-sessioncard]="klass.firstSession.acronym">
+          <div class="card-header d-flex">
+            <!-- Hide for students-->
+            <span class="card-header__today" translate *ngIf="isAnInstructor">
+              Today
+            </span>
+            <!-- Hide for instructors-->
+            <div class="card-header__image" *ngIf="!isAnInstructor">
+              <img src="{{ klass.instructor.picture }}" alt="{{ klass.instructor.name }}" />
+            </div>
+            <div class="card-header__class d-flex flex-column justify-content-center">
+              <h2 class="card-header__class-name">
+                {{ klass.name }}
+              </h2>
+              <!-- Hide for instructors-->
+              <div class="card-header__class-teacher bottom-line pb-2" *ngIf="!isAnInstructor">
+                <span translate>with </span>
+                <span class="card-header__class-teacher-name">{{ klass.instructor.name }}</span>
+              </div>
+              <div class="card-header__class-date" *ngIf="klass.firstSession.isForClass">
+                <div>This class meets on</div>
+                <div>{{ getScheduleDate(klass?.scheduleLocalStr) }}</div>
+                <div>{{ getScheduleTime(klass?.scheduleLocalStr) }}</div>
+              </div>
+
+              <!-- Hide for students-->
+              <div class="card-header__class-week" *ngIf="isAnInstructor && klass.firstSession.isForClass">
+                <span translate>Session </span>
+                <span>{{ klass.firstSession.seq }}</span>
+              </div>
+              <!-- Hide for students-->
+              <div class="card-header__class-people" *ngIf="isAnInstructor && klass.firstSession.isForClass">
+                {{ klass.capacity || '0' }}
+                <span translate> dyads</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-body" text-center *ngIf="userAgentIsSupported">
+            <!-- Hide for instructors-->
+            <div class="card-body__status" *ngIf="!isAnInstructor">
+              <div>
+                <span>{{ klass.firstSession.statusStr }}</span>
+              </div>
+            </div>
+            <!-- Hide for students-->
+            <div class="card-body__status bold mb-10" *ngIf="isAnInstructor && klass.firstSession.isForClass">
+              <h3 translate>Next Session</h3>
+            </div>
+            <div class="card-body__second-message">
+              {{ klass.firstSession.actionStr }}
+            </div>
+          </div>
+          <div class="card-footer text-center" *ngIf="klass.firstSession.canEnter && userAgentIsSupported">
+            <div class="card-footer__status">
+              <div class="card-footer__status-open">
+                <button
+                  class="btn btn-radius pd-tb-20"
+                  (click)="enterToSession(klass.firstSession)"
+                  [attr.data-sessionenter]="klass.firstSession.acronym"
+                >
+                  <span>{{ 'Enter Classroom' | translate }}</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

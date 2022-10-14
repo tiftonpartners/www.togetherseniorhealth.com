@@ -1,0 +1,22 @@
+@import "src/theme/theme-variables";
+
+.page-404 {
+  font-family: $font-family-verdana;
+
+  &__item {
+    width: 100%;
+  }
+
+  .card {
+    width: 650px;
+    max-width: 650px;
+    margin: 0 auto;
+
+    &-header,
+    &-content,
+    &-footer {
+      padding-left: 72px;
+      padding-right: 72px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+/* buttons.scss */
+button {
+  font-family: $font-family-verdana;
+}
+
+.btn-radius {
+  // padding: 23px 39px;
+  font-size: 24px;
+  line-height: 1;
+  font-family: $font-family-verdana;
+  font-weight: 900;
+  text-decoration: none !important;
+  text-align: center;
+  background: $yellow;
+  color: $indigo;
+  border-radius: $btn-border-radius;
+  transition: 0.3s ease all;
+  display: inline-block;
+
+  &:hover {
+    background: $indigo;
+    color: $white;
+  }
+}
+
+.btn.btn-gradient {
+  $border: 2px;
+
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-clip: padding-box;
+  border: solid $border transparent;
+  justify-content: center;
+  font-size: $sm-font-size;
+  font-weight: 600;
+  font-family: $font-family-verdana;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: -$border;
+    border-radius: inherit;
+    background: linear-gradient(to bottom, #e3f4ca, #87a25c);
+  }
+
+  &.btn-white::before {
+    background: linear-gradient(to bottom, $gray-100, $gray-400);
+  }
+
+  > span {
+    font-family: $font-family-verdana;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 18px;
+    height: 100%;
+    border-radius: $btn-border-radius;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    i {
+      margin-right: 12px;
+      font-size: $default-font-size;
+    }
+  }
+
+  @each $color, $value in $theme-colors {
+    &.btn-#{$color} {
+      > span {
+        @include button-variant($value, $value);
+      }
+    }
+  }
+}

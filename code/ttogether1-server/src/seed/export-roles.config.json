@@ -1,0 +1,16 @@
+{
+    "sourceFile": "./src/seed/roles.xlsx",
+    "header": {
+        "rows": 1
+    },
+    "sheets": [
+        {
+            "name": "Data",
+            "columnToKey": {
+                "B": "method",
+                "G": "Permissions",
+                "H": "Data Element"
+            }
+        }
+    ]
+}

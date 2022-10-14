@@ -1,0 +1,27 @@
+<button
+  class="controlButton"
+  [class.controlButton--has-icon]="icon"
+  [class.controlButton--active]="active"
+  [class.controlButton--textWrap]="textWrap"
+  [class.controlButton--textHidden]="hideText"
+  [class.controlButton--round]="round"
+  [class.controlButton--small]="small"
+>
+  <span class="controlButton__container">
+    <span *ngIf="icon && !toggle" class="controlButton__icon" [ngClass]="[icon ? 'controlButton__icon--' + icon : '']">
+    </span>
+    <span
+      *ngIf="toggleIcon && toggle"
+      class="controlButton__icon"
+      [ngClass]="[toggleIcon ? 'controlButton__icon--' + toggleIcon : '']"
+    >
+    </span>
+    <div *ngIf="!round">
+      <ng-container *ngTemplateOutlet="outside"></ng-container>
+    </div>
+  </span>
+</button>
+<div *ngIf="round">
+  <ng-container *ngTemplateOutlet="outside"></ng-container>
+</div>
+<ng-template #outside><ng-content></ng-content></ng-template>

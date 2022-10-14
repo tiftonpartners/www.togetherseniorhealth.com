@@ -1,0 +1,29 @@
+@import "src/theme/theme-variables";
+
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $zindex-dropdown;
+  font-size: $xs-font-size;
+}
+
+.nav-link.dropdown-toggle {
+  cursor: pointer;
+}
+
+.session-state {
+  margin-left: 3em;
+}
+
+.session-state .state-info {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.session-state .label {
+  color: white;
+  text-transform: uppercase;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}

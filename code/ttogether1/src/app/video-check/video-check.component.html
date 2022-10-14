@@ -1,0 +1,56 @@
+<section class="videoCheck__container">
+  <h3 *ngIf="workingVideo" class="inline-block">
+    {{ 'Make sure that your whole body from' | translate }} <br />
+    {{ 'head to toe is visible in the video preview' | translate }}
+  </h3>
+  <div class="videoCheck__video_error-container">
+    <h2 *ngIf="!workingVideo && !triedAgain && loaded">{{ 'Your video is not working' | translate }}</h2>
+    <h2 *ngIf="!workingVideo && triedAgain">{{ 'Your video is still not working 😢' | translate }}</h2>
+  </div>
+
+  <div class="videoCheck__video-container">
+    <div class="check__video-item" #videoItem>
+      <div class="check__video-container" #videoContainer (window.resize)="onResize($event)">
+        <video #camera id="camera"></video>
+      </div>
+      <div class="check__video-info-bar" *ngIf="userInfo">
+        <span class="icon-mic-white-slash" *ngIf="muted"></span>
+        <span class="video-info-bar__nickname">{{ userInfo.name }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons" *ngIf="loaded">
+    <div class="buttons__border-element"></div>
+    <div class="buttons__center-container">
+      <button class="buttons__container buttons__error" (click)="tryAgain()" *ngIf="!workingVideo && !triedAgain">
+        <span class="buttons__text">{{ 'Start Over' | translate }}</span>
+      </button>
+      <button class="buttons__container buttons__error" (click)="startOver()" *ngIf="triedAgain">
+        <span class="buttons__text">{{ 'Start Over' | translate }}</span>
+      </button>
+
+      <button class="btn-radius btn-continue" [disabled]="!workingVideo && !triedAgain" (click)="continue()">
+        <span class="buttons__text">{{ joinClassBtnText | translate }}</span>
+      </button>
+    </div>
+
+    <div class="buttons__border-element">
+      <div class="askForHelp__container" *ngIf="askedForHelp">
+        <h4 translate>{{ this.videoCheckHelp[0] }}</h4>
+        <p [innerHTML]="this.videoCheckHelp[1]"></p>
+      </div>
+
+      <control-button
+        class="buttons__ask-for-help"
+        icon="hand"
+        toggleIcon="hand"
+        (click)="askForHelp()"
+        [toggle]="!showGlobalCommands"
+        [active]="askedForHelp"
+      >
+        <span translate>Get Help</span>
+      </control-button>
+    </div>
+  </div>
+</section>

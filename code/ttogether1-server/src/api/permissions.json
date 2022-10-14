@@ -1,0 +1,290 @@
+{
+    "apiGetAllAdHocSessions": {
+        "permissions": ["query:session"]
+    },
+    "apiGetSchedule": {
+        "permissions": ["query:session"]
+    },
+    "apiGetMyUpcoming": {
+        "permissions": ["queryMe:upcomingSession"]
+    },
+    "apiGetUpcoming": {
+        "permissions": ["query:upcomingSession"]
+    },
+    "apiGetSession": {
+        "permissions": ["get:session"]
+    },
+    "apiDeleteSession": {
+        "permissions": ["delete:session"]
+    },
+    "apiScheduleSession": {
+        "permissions": ["create:session"]
+    },
+    "apiRescheduleSession": {
+        "permissions": ["update:session"]
+    },
+    "apiGetMyAttendance": {
+        "permissions": ["queryMe:attendance"]
+    },
+    "apiGetUserAttendance": {
+        "permissions": ["query:attendance"]
+    },
+    "apiGetClassAttendance": {
+        "permissions": ["query:attendance"]
+    },
+    "apiGetSessionAttendance": {
+        "permissions": ["query:attendance", "get:session"]
+    },
+    "apiGetAllClasses": {
+        "permissions": ["query:class"]
+    },
+    "apiCreateClass": {
+        "permissions": ["create:class"]
+    },
+    "apiUpdateClass": {
+        "permissions": ["update:class"]
+    },
+    "apiGetAllSessions": {
+        "permissions": ["query:session"]
+    },
+    "apiScheduleSessions": {
+        "permissions": ["create:session", "get:class"]
+    },
+    "apiGetMyClasses": {
+        "permissions": ["queryMe:session"]
+    },
+    "apiGetAllClassesByUserId": {
+        "permissions": ["query:session"]
+    },
+    "apiGetMyUpcommingClasses": {
+        "permissions": ["queryMe:upcomingClass"]
+    },
+    "apiGetClassByAcronym": {
+        "permissions": ["get:class"]
+    },
+    "apiDeleteClassByAcronym": {
+        "permissions": ["delete:class"]
+    },
+    "apiGetClassById": {
+        "permissions": ["get:class"]
+    },
+    "apiDeleteClassById": {
+        "permissions": ["delete:class"]
+    },
+    "apiAddUserToClassById": {
+        "permissions": ["update:class"]
+    },
+    "apiRemoveUserFromClassById": {
+        "permissions": ["update:class"]
+    },
+    "apiGetClassBySessionAcronym": {
+        "permissions": ["get:session", "get:class"]
+    },
+    "apiUpdateClassBySessionAcronym": {
+        "permissions": ["update:session", "get:class"]
+    },
+    "apiSkipSessionByAcronym": {
+        "permissions": ["update:session"]
+    },
+    "apiDeleteSessionByAcronym": {
+        "permissions": ["delete:class"]
+    },
+    "apiMarkAttendance": {
+        "permissions": ["update:attendance", "get:session"]
+    },
+    "apiGetClassesByCourseAcronym": {
+        "permissions": ["query:class", "get:course"]
+    },
+    "apiCreateCourse": {
+        "permissions": ["update:course"]
+    },
+    "apiGetAllCourses": {
+        "permissions": ["query:course"]
+    },
+    "apiUpdateCourseByAcronym": {
+        "permissions": ["update:course"]
+    },
+    "apiDeleteCourseByAcronym": {
+        "permissions": ["delete:course"]
+    },
+    "apiGetUserTicket": {
+        "permissions": ["get:ticket"]
+    },
+    "apigetAVUserTicket": {
+        "permissions": ["get:ticket"]
+    },
+    "apiGetClassTicket": {
+        "permissions": ["get:ticket", "get:class"]
+    },
+    "apiGetActiveSessions": {
+        "permissions": ["get:test"]
+    },
+    "apiTimeWarpSessionTime": {
+        "permissions": ["update:test"]
+    },
+    "apiJoinSession": {
+        "permissions": ["update:test"]
+    },
+    "apiGetAllUsers": {
+        "permissions": ["query:user"]
+    },
+    "apiGetAllProspectUsers": {
+        "permissions": ["query:prospect"]
+    },
+    "apiGetAllParticipantUsers": {
+        "permissions": ["query:participant"]
+    },
+    "apiCreateUser": {
+        "permissions": ["create:user"]
+    },
+    "apiUpdateAuth0UserById": {
+        "permissions": ["update:user"]
+    },
+    "apiCreateProspectUser": {
+        "permissions": ["create:prospect"]
+    },
+    "apiCreateParticipantUser": {
+        "permissions": ["create:participant"]
+    },
+    "apiGetAllSiteUsers": {
+        "permissions": ["query:user"]
+    },
+    "apiGetUsersByRole": {
+        "permissions": ["get:user"]
+    },
+    "apiGetUserByNumber": {
+        "permissions": ["get:user"]
+    },
+    "apiGetUserNumber": {
+        "permissions": ["get:user"]
+    },
+    "apiGetUserById": {
+        "permissions": ["get:user"]
+    },
+    "apiGetAVUserById": {
+        "permissionsOr": ["get:prospect", "get:participant"]
+    },
+    "apiGetProspectById": {
+        "permissions": ["get:prospect"]
+    },
+    "apiGetParticipantById": {
+        "permissions": ["get:participant"]
+    },
+    "apiGetAllScopes": {
+        "permissions": ["query:user"]
+    },
+    "apiGetAllAuth0Users": {
+        "permissions": ["query:user"]
+    },
+    "apiUpdateUserById": {
+        "permissions": ["update:user"]
+    },
+    "apiMakeParticipantById": {
+        "permissions": ["update:prospect"]
+    },
+    "apiCloseUserById": {
+        "permissionsOr": ["update:prospect", "update:participant"]
+    },
+    "apiUpdateProspectUserById": {
+        "permissions": ["update:prospect"]
+    },
+    "apiUpdateParticipantUserById": {
+        "permissions": ["update:participant"]
+    },
+    "apiDeleteProspectUserByScreenerId": {
+        "permissions": ["delete:prospect"]
+    },
+    "apiDeleteParticipantUserByScreenerId": {
+        "permissions": ["delete:participant"]
+    },
+    "apiCreateHubspotUser": {
+        "permissions": ["create:prospect", "create:participant"]
+    },
+    "apiGetAuth0UserRoles": {
+        "permissions": ["query:role"]
+    },
+    "apiGetAuth0UserRolesById": {
+        "permissions": ["get:role"]
+    },
+    "apiUpdateAuth0UserRolesById": {
+        "permissions": ["update:role"]
+    },
+    "apiGetSessionUserToken": {
+        "permissions": ["get:class", "get:session"]
+    },
+    "apiGetAdhocSessionUserToken": {
+        "permissions": ["get:session"]
+    },
+    "apiHandleAgoraCallback": {
+        "permissions": ["get:video"]
+    },
+    "apiHandleAWSCallback": {
+        "permissions": ["update:recording"]
+    },
+    "apiBeginRecording": {
+        "permissions": ["create:video"]
+    },
+    "apiEndRecording": {
+        "permissions": ["update:video"]
+    },
+    "apiGetRecording": {
+        "permissions": ["get:video"]
+    },
+    "apiGetAllRecordings": {
+        "permissions": ["query:recording"]
+    },
+    "apiGetRecordingFilesForSessionAcronym": {
+        "permissions": ["get:recording"]
+    },
+    "apiGetRecordingFilesForSID": {
+        "permissions": ["get:recording"]
+    },
+    "apiGetRecordingsForChannel": {
+        "permissions": ["query:video"]
+    },
+    "apiGetMusicFiles": {
+        "permissions": ["query:music"]
+    },
+    "apiSendDailyClassReminderEmail": {
+        "permissions": ["create:email"]
+    },
+    "apiSendTomorrowClassReminderEmail": {
+        "permissions": ["create:email"]
+    },
+    "apiSendClassReminderEmailByUserId": {
+        "permissions": ["create:email"]
+    },
+    "apiSendRescheduledClassReminderEmailByUserId": {
+        "permissions": ["create:email"]
+    },
+    "apiSendDailyAdHocSessionReminderEmail": {
+        "permissions": ["create:email"]
+    },
+    "apiSendTomorrowAdHocSessionReminderEmail": {
+        "permissions": ["create:email"]
+    },
+    "apiSendAdHocSessionReminderEmailByUserId": {
+        "permissions": ["create:email"]
+    },
+    "apiSendMeetNowAdHocSessionReminder": {
+        "permissions": ["create:email"]
+    },
+    "apiGetAllLedgerEntries": {
+        "permissions": ["query:email"]
+    },
+    "apiGetAllPrograms": {
+        "permissions": ["query:program"]
+    },
+    "apiGetMyPrograms": {
+        "permissions": ["queryMe:program"]
+    },
+    "apiGetProgramsByAcronyms": {
+        "permissions": ["query:program"]
+    },
+    "apiCreateProgram": {
+        "permissions": ["create:program"]
+    },
+    "apiUpdateProgram": {
+        "permissions": ["update:program"]
+    }
+}
