@@ -1,0 +1,315 @@
+%!Adobe-FontList 1.22
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AdobeFnt22.lst
+FileLength:7370
+FileModTime:664243169
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGrotesk-Bd
+FamilyName:Aribau Grotesk
+StyleName:Bold
+MenuName:Aribau Grotesk Bold
+StyleBits:0
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk Bold
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGrotesk-Bd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:60268
+FileModTime:576567692
+NameArray:0,Mac,4,Aribau Grotesk Bold
+NameArray:0,Win,1,Aribau Grotesk Bold
+NameArray:0,Win,16,Aribau Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGrotesk-Blk
+FamilyName:Aribau Grotesk
+StyleName:Black
+MenuName:Aribau Grotesk Black
+StyleBits:0
+WeightClass:800
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk Black
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGrotesk-Blk.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:59456
+FileModTime:576567796
+NameArray:0,Mac,4,Aribau Grotesk Black
+NameArray:0,Win,1,Aribau Grotesk Black
+NameArray:0,Win,16,Aribau Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGrotesk-Lt
+FamilyName:Aribau Grotesk
+StyleName:Light
+MenuName:Aribau Grotesk Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk Light
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGrotesk-Lt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:56792
+FileModTime:576567380
+NameArray:0,Mac,4,Aribau Grotesk Light
+NameArray:0,Win,1,Aribau Grotesk Light
+NameArray:0,Win,16,Aribau Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGrotesk-Rg
+FamilyName:Aribau Grotesk
+StyleName:Regular
+MenuName:Aribau Grotesk Regular
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk Regular
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGrotesk-Rg.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:55900
+FileModTime:576567484
+NameArray:0,Mac,4,Aribau Grotesk Regular
+NameArray:0,Win,1,Aribau Grotesk Regular
+NameArray:0,Win,16,Aribau Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGroteskTRIAL-Bd
+FamilyName:Aribau Grotesk TRIAL
+StyleName:Bold
+MenuName:Aribau Grotesk TRIAL Bd
+StyleBits:0
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk TRIAL Bd
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGroteskTRIAL-Bd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:19172
+FileModTime:597990960
+NameArray:0,Mac,4,Aribau Grotesk TRIAL Bd
+NameArray:0,Win,1,Aribau Grotesk TRIAL Bd
+NameArray:0,Win,16,Aribau Grotesk TRIAL
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGroteskTRIAL-Lt
+FamilyName:Aribau Grotesk TRIAL
+StyleName:Light
+MenuName:Aribau Grotesk TRIAL Lt
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk TRIAL Lt
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGroteskTRIAL-Lt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:19028
+FileModTime:597990890
+NameArray:0,Mac,4,Aribau Grotesk TRIAL Lt
+NameArray:0,Win,1,Aribau Grotesk TRIAL Lt
+NameArray:0,Win,16,Aribau Grotesk TRIAL
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AribauGroteskTRIAL-Rg
+FamilyName:Aribau Grotesk TRIAL
+StyleName:Regular
+MenuName:Aribau Grotesk TRIAL Rg
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Aribau Grotesk TRIAL Rg
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/AribauGroteskTRIAL-Rg.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:18808
+FileModTime:597990768
+NameArray:0,Mac,4,Aribau Grotesk TRIAL Rg
+NameArray:0,Win,1,Aribau Grotesk TRIAL Rg
+NameArray:0,Win,16,Aribau Grotesk TRIAL
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Georgia
+FamilyName:Georgia
+StyleName:Regular
+MenuName:Georgia
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Georgia
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/Georgia.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:379588
+FileModTime:658841768
+NameArray:0,Mac,4,Georgia
+NameArray:0,Win,1,Georgia
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+MenuName:Myriad Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Myriad Pro
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:97072
+FileModTime:497882574
+DesignSize:110
+NameArray:0,Mac,4,Myriad Pro
+NameArray:0,Win,1,Myriad Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:SourceSerifVariable-Roman
+FamilyName:Source Serif Variable
+StyleName:Roman
+MenuName:Source Serif Variable
+FamilyPrefix:SourceSerifRoman
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Source Serif Variable
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/SourceSerifVariable-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:CFF2VariableFont
+FileLength:484900
+FileModTime:654784946
+DesignSize:100
+NameArray:0,Mac,4,Source Serif Variable
+NameArray:0,Win,1,Source Serif Variable
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Verdana-Bold
+FamilyName:Verdana
+StyleName:Bold
+MenuName:Verdana
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Verdana Bold
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/Verdana Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:153260
+FileModTime:645723466
+NameArray:0,Mac,4,Verdana Bold
+NameArray:0,Win,1,Verdana
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Verdana
+FamilyName:Verdana
+StyleName:Regular
+MenuName:Verdana
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Verdana
+WritingScript:Roman
+OutlineFileName:/Users/imac/Desktop/Together Brand Guides_010722 Folder/Document fonts/Verdana.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:186188
+FileModTime:663236122
+NameArray:0,Mac,4,Verdana
+NameArray:0,Win,1,Verdana
+%EndFont
+

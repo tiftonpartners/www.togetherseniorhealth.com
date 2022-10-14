@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "096b2145-0bb8-4bb6-a9fe-77e9be09fedd",
+		"name": "Float",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17628107"
+	},
+	"item": [
+		{
+			"name": "getPeople",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{apiToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/people?fields=name,people_id,work_days_hours&active=1",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"people"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "name,people_id,work_days_hours"
+						},
+						{
+							"key": "active",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{apiToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/tasks?per-page=200&fields=repeat_end_date,repeat_state,task_id,start_date,end_date,people_id,name,notes,project_id,hours&start_date=2020-11-01&end_date=2020-11-30&per-page=200",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "per-page",
+							"value": "200"
+						},
+						{
+							"key": "fields",
+							"value": "repeat_end_date,repeat_state,task_id,start_date,end_date,people_id,name,notes,project_id,hours"
+						},
+						{
+							"key": "start_date",
+							"value": "2020-11-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-11-30"
+						},
+						{
+							"key": "per-page",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTimeOffs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{apiToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/timeoffs?start_date=2020-11-01&end_date=2020-11-30&per_page=200",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"timeoffs"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2020-11-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2020-11-30"
+						},
+						{
+							"key": "per_page",
+							"value": "200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTimeOffsTypes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{apiToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/timeoff-types",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"timeoff-types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHolidays",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{apiToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{apiUrl}}/holidays",
+					"host": [
+						"{{apiUrl}}"
+					],
+					"path": [
+						"holidays"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
